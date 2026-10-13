@@ -48,7 +48,7 @@ Muestra una incidencia en su propia dirección, abierta desde el listado o por s
 
 - Datos de ejemplo. Contrato: `GET /incidents/{id}` ([API-001](../../../../../architecture/incidencias/apis/API-001-incidencias.md#get-incidents-id)) devuelve la incidencia ([MD-001](../../../../../architecture/incidencias/models/MD-001-incidencia.md)) con `comments` ([MD-002](../../../../../architecture/incidencias/models/MD-002-comentario.md)) ordenados ascendentemente; el `404` se presenta como «Incidencia no encontrada» (AC-008).
 - El autor de los comentarios es el usuario de demostración del sistema; su nombre visible («Agente demo») lo fija [WF-001 de US-004](../../US-004-comentar-incidencia/wireframes/WF-001-formulario-comentario.md).
-- Propuesta: la dirección del detalle es `/incidencias/{id}`; la ruta exacta de Angular se confirma en la planificación técnica ([FL-003](../../../../../architecture/incidencias/flows/FL-003-consulta-detalle-incidencia.md)).
+- Propuesta: la dirección del detalle es `/incidents/{id}`; la ruta exacta de Angular se confirma en la planificación técnica ([FL-003](../../../../../architecture/incidencias/flows/FL-003-consulta-detalle-incidencia.md)).
 - Propuesta: el formulario de comentario va **debajo** de la lista, junto al comentario más reciente, porque el orden es ascendente.
 
 ## Historial de cambios

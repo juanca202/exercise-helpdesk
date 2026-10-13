@@ -1,7 +1,7 @@
 # TK-004: Página de detalle de incidencia
 
-<!-- tk:status=Draft -->
-**Estado:** Draft
+<!-- tk:status=Ready -->
+**Estado:** Ready
 **Historia:** [US-003](./README.md)
 **Repositorio:** helpdesk-frontend
 
@@ -50,7 +50,3 @@ helpdesk-frontend/
 - [ ] **IT-08** — Ante un `404` (id inexistente o inválido), mostrar «Incidencia no encontrada» con texto explicativo y el botón «Volver al listado» que navega a `/incidents`
 - [ ] **IT-09** — Adaptar la vista móvil a una sola columna: datos en cuadrícula de 2 × 2 con las acciones de estado debajo, descripción, comentarios y formulario
 - [ ] **IT-10** — Pruebas unitarias con Testing Library y MSW: carga, detalle con todos los campos y comentarios en orden, sin comentarios, error con reintento exitoso, no encontrada con navegación al listado, y accesibilidad (AXE) en los estados de detalle, error y no encontrada
-
-## Observaciones
-
-- La ruta planificada `/incidents/:id` (esquema de rutas del frontend en inglés decidido por el usuario) entra en conflicto con el criterio de dirección propia del detalle de la [US-003](./README.md), que hoy exige la forma `/incidencias/{id}`. Ese criterio debe actualizarse con `/work-define` antes de implementar esta tarea; resuelto el conflicto, la tarea puede pasar a `Ready` sin otros cambios.

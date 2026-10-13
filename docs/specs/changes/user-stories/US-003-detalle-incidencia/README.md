@@ -3,7 +3,7 @@
 <!-- us:status=Ready -->
 **Estado:** Ready
 **Fecha de creación:** 2026-10-12
-**Última actualización:** 2026-10-12
+**Última actualización:** 2026-10-13
 **Repositorios:** helpdesk-backend, helpdesk-frontend
 **INVEST:** 🟢 6 / 6
 **DoR:** 🟢 6 / 6
@@ -36,7 +36,7 @@ Origen: RF-03 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-help
 - **AC-002 (Salidas del sistema):** El detalle DEBE incluir el identificador, título, descripción, categoría, prioridad, estado actual, fecha de creación y los comentarios asociados.
 - **AC-003 (Procesamiento de datos):** El detalle DEBE devolver los comentarios en orden cronológico ascendente y una lista vacía cuando la incidencia no tenga comentarios.
 - **AC-004 (Reglas de negocio):** Ante un identificador inexistente o que no sea un UUID v4 válido, el sistema DEBE responder con un error 404 que comunique que la incidencia no fue encontrada.
-- **AC-005 (Interacción de usuario):** La interfaz DEBE mostrar el detalle en una dirección propia por incidencia, de la forma `/incidencias/{id}`, de modo que pueda abrirse desde el listado o directamente por su identificador.
+- **AC-005 (Interacción de usuario):** La interfaz DEBE mostrar el detalle en una dirección propia por incidencia, de la forma `/incidents/{id}`, de modo que pueda abrirse desde el listado o directamente por su identificador.
 - **AC-006 (Salidas del sistema):** Si la incidencia no existe, la interfaz DEBE mostrar un mensaje comprensible de «incidencia no encontrada» con una acción para volver al listado.
 - **AC-007 (Usabilidad):** La interfaz DEBE mostrar un indicador de carga mientras consulta el detalle, un estado vacío comprensible cuando no haya comentarios y un mensaje de error comprensible, con opción de reintentar, si la consulta falla.
 - **AC-008 (Integraciones):** El frontend DEBE consumir el endpoint de detalle conforme al contrato OpenAPI del backend.
