@@ -35,7 +35,7 @@ helpdesk-backend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Añadir el esquema de parámetros (`id` como UUID) y las respuestas `200` y `404` de `GET /:id`
-- [ ] **IT-02** — Implementar la obtención por id en el servicio, lanzando un error con `statusCode` 404 cuando no existe
-- [ ] **IT-03** — Registrar `GET /:id` en `incidents.routes.ts` y verificar que figura en el contrato OpenAPI
-- [ ] **IT-04** — Pruebas con `inject`: registrar y recuperar devuelve los mismos datos (AC-003); un UUID inexistente devuelve `404`
+- [x] **IT-01** — Añadir el esquema de parámetros (`id` como UUID) y las respuestas `200` y `404` de `GET /:id`
+- [x] **IT-02** — Implementar la obtención por id en el servicio, lanzando un error con `statusCode` 404 cuando no existe
+- [x] **IT-03** — Registrar `GET /:id` en `incidents.routes.ts` y verificar que figura en el contrato OpenAPI
+- [x] **IT-04** — Pruebas con `inject`: registrar y recuperar devuelve los mismos datos (AC-003); un UUID inexistente devuelve `404`

@@ -40,11 +40,11 @@ helpdesk-backend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Definir en `incidents.schemas.ts` los enums de categoría (`HARDWARE`, `SOFTWARE`, `ACCESS_PERMISSIONS`, `NETWORK_CONNECTIVITY`, `EMAIL_COMMUNICATION`, `OTHER`) y prioridad (`LOW`, `MEDIUM`, `HIGH`)
-- [ ] **IT-02** — Definir el esquema de creación con `z.strictObject`: `title` (recorte y 5–100), `description` (recorte y 10–2000), `category`, `priority`; con mensajes de validación propios en español
+- [x] **IT-01** — Definir en `incidents.schemas.ts` los enums de categoría (`HARDWARE`, `SOFTWARE`, `ACCESS_PERMISSIONS`, `NETWORK_CONNECTIVITY`, `EMAIL_COMMUNICATION`, `OTHER`) y prioridad (`LOW`, `MEDIUM`, `HIGH`)
+- [x] **IT-02** — Definir el esquema de creación con `z.strictObject`: `title` (recorte y 5–100), `description` (recorte y 10–2000), `category`, `priority`; con mensajes de validación propios en español
   Un valor solo con espacios cuenta como vacío; `id`, `status` y `createdAt` enviados por el cliente (o cualquier clave no declarada) se rechazan.
-- [ ] **IT-03** — Definir el esquema de respuesta de la incidencia (`id` UUID, campos, `status`, `createdAt` ISO 8601)
-- [ ] **IT-04** — Implementar `incidents.service.ts`: asignar `id` con `randomUUID()`, `status = 'Open'` y `createdAt`, y persistir vía el repositorio; sin importar tipos de Fastify
-- [ ] **IT-05** — Implementar `POST /` en `incidents.routes.ts` con respuesta `201` y `400`, y registrar el módulo en `app.ts` con `prefix: '/incidents'`
-- [ ] **IT-06** — Verificar que el manejador de errores común devuelve en `issues` el campo (`instancePath`) y el mensaje propio en español; ajustarlo solo si hace falta
-- [ ] **IT-07** — Pruebas con `inject`: `201` con id, `Open` y `createdAt`; `400` por título/descripción/categoría/prioridad inválidos, por espacios y por claves `id`/`status`/`createdAt`; nada persistido en los `400`; la ruta figura en el OpenAPI
+- [x] **IT-03** — Definir el esquema de respuesta de la incidencia (`id` UUID, campos, `status`, `createdAt` ISO 8601)
+- [x] **IT-04** — Implementar `incidents.service.ts`: asignar `id` con `randomUUID()`, `status = 'Open'` y `createdAt`, y persistir vía el repositorio; sin importar tipos de Fastify
+- [x] **IT-05** — Implementar `POST /` en `incidents.routes.ts` con respuesta `201` y `400`, y registrar el módulo en `app.ts` con `prefix: '/incidents'`
+- [x] **IT-06** — Verificar que el manejador de errores común devuelve en `issues` el campo (`instancePath`) y el mensaje propio en español; ajustarlo solo si hace falta
+- [x] **IT-07** — Pruebas con `inject`: `201` con id, `Open` y `createdAt`; `400` por título/descripción/categoría/prioridad inválidos, por espacios y por claves `id`/`status`/`createdAt`; nada persistido en los `400`; la ruta figura en el OpenAPI

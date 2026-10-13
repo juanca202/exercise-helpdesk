@@ -40,10 +40,10 @@ helpdesk-backend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Añadir `DATABASE_PATH` al esquema de entorno y a `.env.example` (por defecto un archivo local; `:memory:` en test)
-- [ ] **IT-02** — Implementar el plugin `database`: abrir `DatabaseSync`, crear la tabla `incidents` si no existe y decorar la instancia con `db`
+- [x] **IT-01** — Añadir `DATABASE_PATH` al esquema de entorno y a `.env.example` (por defecto un archivo local; `:memory:` en test)
+- [x] **IT-02** — Implementar el plugin `database`: abrir `DatabaseSync`, crear la tabla `incidents` si no existe y decorar la instancia con `db`
   Columnas: `id` (TEXT, clave primaria), `title`, `description`, `category`, `priority`, `status`, `created_at` (TEXT ISO 8601 UTC), con restricciones `CHECK` para los enums y `NOT NULL` en todas.
-- [ ] **IT-03** — Cerrar la conexión en el hook `onClose` y tipar el decorador en `src/types/fastify.d.ts`
-- [ ] **IT-04** — Implementar `incidents.repository.ts` con `insert` y `findById`, mapeando `created_at` ↔ `createdAt`; sin importar tipos de Fastify
-- [ ] **IT-05** — Pruebas: el plugin crea el esquema; insertar y recuperar devuelve los mismos datos; un id inexistente devuelve `undefined`
-- [ ] **IT-06** — Registrar la elección de `node:sqlite` como librería de acceso en ADR-007 mediante `/arch-manage`
+- [x] **IT-03** — Cerrar la conexión en el hook `onClose` y tipar el decorador en `src/types/fastify.d.ts`
+- [x] **IT-04** — Implementar `incidents.repository.ts` con `insert` y `findById`, mapeando `created_at` ↔ `createdAt`; sin importar tipos de Fastify
+- [x] **IT-05** — Pruebas: el plugin crea el esquema; insertar y recuperar devuelve los mismos datos; un id inexistente devuelve `undefined`
+- [x] **IT-06** — Registrar la elección de `node:sqlite` como librería de acceso en ADR-007 mediante `/arch-manage`

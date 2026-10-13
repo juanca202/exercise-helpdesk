@@ -39,8 +39,8 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Definir el modelo `Incident`/`NewIncident` y las opciones de categoría y prioridad con su etiqueta en español (Hardware, Software, Accesos y permisos, Red y conectividad, Correo y comunicación, Otro; Baja, Media, Alta) ligadas a los códigos del contrato
-- [ ] **IT-02** — Implementar el mapper de funciones puras entre los datos del formulario y el cuerpo de `POST /incidents`
-- [ ] **IT-03** — Implementar `IncidentRepository` (extiende `BaseRepository`) con la mutación de registro mediante `getMutations()` y URLs con `getApiUrl('incidents')`
-- [ ] **IT-04** — Añadir el handler MSW de `POST /incidents` (`201` con id, `Open` y `createdAt`; `400` con la estructura `{statusCode, error, message, issues[]}`)
-- [ ] **IT-05** — Pruebas unitarias del mapper y del repositorio: éxito, error `400` con `issues` y error de red
+- [x] **IT-01** — Definir el modelo `Incident`/`NewIncident` y las opciones de categoría y prioridad con su etiqueta en español (Hardware, Software, Accesos y permisos, Red y conectividad, Correo y comunicación, Otro; Baja, Media, Alta) ligadas a los códigos del contrato
+- [x] **IT-02** — Implementar el mapper de funciones puras entre los datos del formulario y el cuerpo de `POST /incidents`
+- [x] **IT-03** — Implementar `IncidentRepository` (extiende `BaseRepository`) con la mutación de registro mediante `getMutations()` y URLs con `getApiUrl('incidents')`
+- [x] **IT-04** — Añadir el handler MSW de `POST /incidents` (`201` con id, `Open` y `createdAt`; `400` con la estructura `{statusCode, error, message, issues[]}`)
+- [x] **IT-05** — Pruebas unitarias del mapper y del repositorio: éxito, error `400` con `issues` y error de red

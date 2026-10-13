@@ -32,7 +32,7 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Escenario de registro válido: completar el formulario, enviar y verificar la confirmación con el identificador devuelto por la API simulada
-- [ ] **IT-02** — Escenario de validación: enviar vacío, verificar los errores por campo y que no se realiza ninguna petición
-- [ ] **IT-03** — Escenario de error de validación de la API (`400` con `issues`): verificar el error en el campo correspondiente y los datos conservados
-- [ ] **IT-04** — Escenario de fallo de la API (`500`): verificar la alerta general y los datos conservados para reintentar
+- [x] **IT-01** — Escenario de registro válido: completar el formulario, enviar y verificar la confirmación con el identificador devuelto por la API simulada
+- [x] **IT-02** — Escenario de validación: enviar vacío, verificar los errores por campo y que no se realiza ninguna petición
+- [x] **IT-03** — Escenario de error de validación de la API (`400` con `issues`): verificar el error en el campo correspondiente y los datos conservados
+- [x] **IT-04** — Escenario de fallo de la API (`500`): verificar la alerta general y los datos conservados para reintentar

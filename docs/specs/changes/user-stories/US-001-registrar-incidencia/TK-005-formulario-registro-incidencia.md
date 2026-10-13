@@ -40,10 +40,10 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Registrar la ruta `incidents/new` con carga diferida y dejarla como pantalla de inicio de la aplicación
-- [ ] **IT-02** — Implementar el formulario con Signal Forms: título (recorte, 5–100), descripción (recorte, 10–2000), categoría y prioridad obligatorias, con las mismas reglas del contrato
-- [ ] **IT-03** — Mostrar el error de cada campo junto a él y los contadores `n / 100` y `n / 2000`; al enviar con errores mostrar todos y no enviar
-- [ ] **IT-04** — Enviar mediante `IncidentRepository`: indicador de carga y formulario bloqueado durante el envío para evitar duplicados
-- [ ] **IT-05** — Mostrar la confirmación con el identificador de la incidencia y la acción «Registrar otra incidencia» que limpia el formulario
-- [ ] **IT-06** — Ante `400`, asignar cada `issue` a su campo (`instancePath`); ante `500` o fallo de red, alerta sobre el formulario conservando los datos escritos
-- [ ] **IT-07** — Pruebas unitarias: validaciones y contadores, bloqueo durante el envío, éxito con identificador, errores de la API y accesibilidad (AXE)
+- [x] **IT-01** — Registrar la ruta `incidents/new` con carga diferida y dejarla como pantalla de inicio de la aplicación
+- [x] **IT-02** — Implementar el formulario con Signal Forms: título (recorte, 5–100), descripción (recorte, 10–2000), categoría y prioridad obligatorias, con las mismas reglas del contrato
+- [x] **IT-03** — Mostrar el error de cada campo junto a él y los contadores `n / 100` y `n / 2000`; al enviar con errores mostrar todos y no enviar
+- [x] **IT-04** — Enviar mediante `IncidentRepository`: indicador de carga y formulario bloqueado durante el envío para evitar duplicados
+- [x] **IT-05** — Mostrar la confirmación con el identificador de la incidencia y la acción «Registrar otra incidencia» que limpia el formulario
+- [x] **IT-06** — Ante `400`, asignar cada `issue` a su campo (`instancePath`); ante `500` o fallo de red, alerta sobre el formulario conservando los datos escritos
+- [x] **IT-07** — Pruebas unitarias: validaciones y contadores, bloqueo durante el envío, éxito con identificador, errores de la API y accesibilidad (AXE)
