@@ -6,7 +6,7 @@
 **Estado:** Done
 **Tipo:** historia de usuario
 **Fecha de creación:** 2026-10-13 09:52
-**Ultima actualizacion:** 2026-10-13 10:40
+**Ultima actualizacion:** 2026-10-13 15:25
 
 ## Unidades
 
