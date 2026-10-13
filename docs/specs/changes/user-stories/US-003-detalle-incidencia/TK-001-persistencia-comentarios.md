@@ -37,12 +37,12 @@ helpdesk-backend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Crear en el plugin `database` la tabla `comments` si no existe, después de `incidents`
+- [x] **IT-01** — Crear en el plugin `database` la tabla `comments` si no existe, después de `incidents`
   Columnas: `id` (TEXT, clave primaria), `incident_id` (TEXT, clave foránea a `incidents(id)`), `content`, `author`, `created_at` (TEXT ISO 8601 UTC, mismo formato que `incidents.created_at`); `NOT NULL` en todas. Sin borrado en cascada: no existe borrado de incidencias ni de comentarios.
-- [ ] **IT-02** — Crear el índice por `incident_id` y activar la verificación de claves foráneas de SQLite al abrir la conexión
-- [ ] **IT-03** — Declarar el tipo `Comment` (`id`, `incidentId`, `content`, `author`, `createdAt`) conforme a MD-002, sin importar tipos de Fastify
-- [ ] **IT-04** — Implementar `findByIncidentId(incidentId)` en `comments.repository.ts`: comentarios de la incidencia ordenados por `created_at` ascendente y, ante igualdad, por orden de inserción (`rowid` ascendente); lista vacía si no hay
+- [x] **IT-02** — Crear el índice por `incident_id` y activar la verificación de claves foráneas de SQLite al abrir la conexión
+- [x] **IT-03** — Declarar el tipo `Comment` (`id`, `incidentId`, `content`, `author`, `createdAt`) conforme a MD-002, sin importar tipos de Fastify
+- [x] **IT-04** — Implementar `findByIncidentId(incidentId)` en `comments.repository.ts`: comentarios de la incidencia ordenados por `created_at` ascendente y, ante igualdad, por orden de inserción (`rowid` ascendente); lista vacía si no hay
   Mapear `incident_id` ↔ `incidentId` y `created_at` ↔ `createdAt`.
-- [ ] **IT-05** — Implementar `insert(comment)` en `comments.repository.ts` como una única sentencia atómica que persiste el comentario recibido con todos sus campos ya asignados
+- [x] **IT-05** — Implementar `insert(comment)` en `comments.repository.ts` como una única sentencia atómica que persiste el comentario recibido con todos sus campos ya asignados
   La asignación de `id`, `author` y `createdAt` y la validación del contenido corresponden al servicio de [US-004](../US-004-comentar-incidencia/README.md); el repositorio solo persiste.
-- [ ] **IT-06** — Pruebas: el plugin crea la tabla `comments` y su índice; insertar y recuperar devuelve los mismos datos; una incidencia sin comentarios devuelve lista vacía; los comentarios salen en orden ascendente de `createdAt`; dos comentarios con el mismo `createdAt` salen en orden de inserción; insertar un comentario con un `incidentId` inexistente falla por la clave foránea y no persiste nada; los comentarios de otra incidencia no se mezclan
+- [x] **IT-06** — Pruebas: el plugin crea la tabla `comments` y su índice; insertar y recuperar devuelve los mismos datos; una incidencia sin comentarios devuelve lista vacía; los comentarios salen en orden ascendente de `createdAt`; dos comentarios con el mismo `createdAt` salen en orden de inserción; insertar un comentario con un `incidentId` inexistente falla por la clave foránea y no persiste nada; los comentarios de otra incidencia no se mezclan
