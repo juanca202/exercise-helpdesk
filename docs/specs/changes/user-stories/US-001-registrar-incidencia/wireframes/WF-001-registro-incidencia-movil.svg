@@ -1,0 +1,37 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 375 812' width='375' height='812'>
+<rect x='0' y='0' width='375' height='812' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<rect x='0' y='0' width='375' height='56' rx='0' fill='#E0E0E0' stroke='#BDBDBD' stroke-width='1'/>
+<rect x='16' y='14.0' width='28' height='28' rx='4' fill='#9E9E9E' stroke='#757575' stroke-width='1'/>
+<text x='54' y='33.0' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#212121' font-weight='bold' text-anchor='start'>Logo: HelpDesk Lite</text>
+<rect x='331' y='14.0' width='28' height='28' rx='14' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/>
+<text x='345' y='32.0' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#424242' font-weight='bold' text-anchor='middle'>U</text>
+<text x='16' y='92' font-family='Arial, Helvetica, sans-serif' font-size='22' fill='#212121' font-weight='bold' text-anchor='start'>Registrar incidencia</text>
+<text x='16' y='114' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#616161' font-weight='normal' text-anchor='start'>Texto: Envía tu solicitud al equipo de soporte.</text>
+<text x='16' y='158' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start'>Campo: Título *</text>
+<rect x='16' y='168' width='343' height='40' rx='4' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<text x='28' y='193' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#9E9E9E' font-weight='normal' text-anchor='start' font-style='italic'>Ej.: No funciona la impresora del piso 3</text>
+<text x='16' y='224' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='normal' text-anchor='start'>Entre 5 y 100 caracteres</text>
+<text x='359' y='224' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='normal' text-anchor='end'>0 / 100</text>
+<text x='16' y='260' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start'>Campo: Descripción *</text>
+<rect x='16' y='270' width='343' height='110' rx='4' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<text x='28' y='294' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#9E9E9E' font-weight='normal' text-anchor='start' font-style='italic'>Describe el problema con el mayor detalle posible</text>
+<text x='349' y='372' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#9E9E9E' font-weight='normal' text-anchor='end'>⇲</text>
+<text x='16' y='396' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='normal' text-anchor='start'>Entre 10 y 2000 caracteres</text>
+<text x='359' y='396' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='normal' text-anchor='end'>0 / 2000</text>
+<text x='16' y='432' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start'>Selector: Categoría *</text>
+<rect x='16' y='442' width='343' height='40' rx='4' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<text x='28' y='467' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#9E9E9E' font-weight='normal' text-anchor='start' font-style='italic'>Selecciona una categoría</text>
+<text x='343' y='467' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#616161' font-weight='normal' text-anchor='end'>▾</text>
+<text x='16' y='498' font-family='Arial, Helvetica, sans-serif' font-size='10' fill='#757575' font-weight='normal' text-anchor='start'>Opciones: Hardware · Software · Accesos y permisos ·</text>
+<text x='16' y='512' font-family='Arial, Helvetica, sans-serif' font-size='10' fill='#757575' font-weight='normal' text-anchor='start'>Red y conectividad · Correo y comunicación · Otro</text>
+<text x='16' y='544' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start'>Selector segmentado: Prioridad *</text>
+<rect x='16.0' y='554' width='114.33333333333333' height='40' rx='0' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<text x='73.16666666666666' y='579' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#424242' font-weight='normal' text-anchor='middle'>○ Baja</text>
+<rect x='130.33333333333331' y='554' width='114.33333333333333' height='40' rx='0' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<text x='187.49999999999997' y='579' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#424242' font-weight='normal' text-anchor='middle'>○ Media</text>
+<rect x='244.66666666666666' y='554' width='114.33333333333333' height='40' rx='0' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<text x='301.8333333333333' y='579' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#424242' font-weight='normal' text-anchor='middle'>○ Alta</text>
+<rect x='16' y='624' width='343' height='44' rx='4' fill='#424242' stroke='#212121' stroke-width='1'/>
+<text x='187.5' y='651' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#fff' font-weight='bold' text-anchor='middle'>Botón: Registrar incidencia</text>
+<text x='16' y='690' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='normal' text-anchor='start'>* Campos obligatorios</text>
+</svg>

@@ -1,0 +1,148 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 800' width='1280' height='800'>
+<rect x='0' y='0' width='1280' height='800' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<rect x='0' y='0' width='1280' height='64' rx='0' fill='#E0E0E0' stroke='#BDBDBD' stroke-width='1'/>
+<rect x='16' y='18' width='28' height='28' rx='4' fill='#9E9E9E' stroke='#757575' stroke-width='1'/>
+<text x='54' y='37' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='#212121' font-weight='bold' text-anchor='start'>Logo: HelpDesk Lite</text>
+<text x='300' y='38' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#424242' font-weight='normal' text-anchor='start'>Dashboard</text>
+<text x='413' y='38' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#212121' font-weight='bold' text-anchor='start'>Incidencias</text>
+<rect x='409' y='58' width='98' height='4' rx='0' fill='#424242' stroke='#424242' stroke-width='0'/>
+<text x='543' y='38' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#424242' font-weight='normal' text-anchor='start'>Nueva incidencia</text>
+<text x='706' y='38' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start' font-style='italic'>← Menú de navegación</text>
+<circle cx='1066' cy='32' r='16' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/>
+<text x='1066' y='37' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='middle'>E</text>
+<text x='1090' y='37' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#424242' font-weight='normal' text-anchor='start'>Usuario: Empleado demo</text>
+<text x='80' y='116' font-family='Arial, Helvetica, sans-serif' font-size='26' fill='#212121' font-weight='bold' text-anchor='start'>Incidencias</text>
+<text x='80' y='140' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>Texto: 27 incidencias con los filtros aplicados</text>
+<rect x='1010' y='96' width='190' height='40' rx='4' fill='#424242' stroke='#212121' stroke-width='1'/>
+<text x='1105.0' y='121.0' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#FFFFFF' font-weight='bold' text-anchor='middle'>Botón: Nueva incidencia</text>
+<rect x='80' y='160' width='1120' height='80' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='100' y='184' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='start'>Selector: Estado</text>
+<rect x='100' y='192' width='240' height='36' rx='4' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<text x='112' y='215' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#9E9E9E' font-weight='normal' text-anchor='start' font-style='italic'>Todos</text>
+<text x='326' y='215' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#616161' font-weight='normal' text-anchor='end'>▾</text>
+<text x='360' y='184' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='start'>Selector: Prioridad</text>
+<rect x='360' y='192' width='240' height='36' rx='4' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<text x='372' y='215' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<text x='586' y='215' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#616161' font-weight='normal' text-anchor='end'>▾</text>
+<text x='620' y='184' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='start'>Selector: Categoría</text>
+<rect x='620' y='192' width='240' height='36' rx='4' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<text x='632' y='215' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#9E9E9E' font-weight='normal' text-anchor='start' font-style='italic'>Todas</text>
+<text x='846' y='215' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#616161' font-weight='normal' text-anchor='end'>▾</text>
+<rect x='880' y='192' width='170' height='36' rx='4' fill='#FFFFFF' stroke='#616161' stroke-width='1'/>
+<text x='965.0' y='215.0' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='middle'>Botón: Limpiar filtros</text>
+<text x='1066' y='214' font-family='Arial, Helvetica, sans-serif' font-size='10' fill='#757575' font-weight='normal' text-anchor='start' font-style='italic'></text>
+<text x='80' y='270' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='start'>Filtros aplicados:</text>
+<rect x='200' y='252' width='141' height='26' rx='13' fill='#EEEEEE' stroke='#9E9E9E' stroke-width='1'/>
+<text x='212' y='269' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#212121' font-weight='normal' text-anchor='start'>Prioridad: Alta</text>
+<text x='327' y='269' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#424242' font-weight='bold' text-anchor='middle'>✕</text>
+<rect x='80' y='290' width='1120' height='40' rx='0' fill='#EEEEEE' stroke='#BDBDBD' stroke-width='1'/>
+<text x='100' y='315' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='start'>ID</text>
+<text x='200' y='315' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='start'>Título</text>
+<text x='580' y='315' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='start'>Categoría</text>
+<text x='770' y='315' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='start'>Prioridad</text>
+<text x='870' y='315' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='start'>Estado</text>
+<rect x='1010' y='297' width='176' height='26' rx='4' fill='#FFFFFF' stroke='#757575' stroke-width='1'/>
+<text x='1022' y='315' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='start'>Fecha de creación ↓</text>
+<text x='1200' y='284' font-family='Arial, Helvetica, sans-serif' font-size='10' fill='#757575' font-weight='normal' text-anchor='end' font-style='italic'>Orden (clic invierte): más recientes primero</text>
+<rect x='80' y='330' width='1120' height='44' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<line x1='80' y1='374' x2='1200' y2='374' stroke='#E0E0E0' stroke-width='1'/>
+<text x='100' y='357' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>6f1c2b0e…</text>
+<text x='200' y='357' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start' text-decoration='underline'>No puedo acceder a la VPN</text>
+<text x='580' y='357' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Red y conectividad</text>
+<text x='770' y='357' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<rect x='870' y='341' width='101' height='22' rx='11.0' fill='#BDBDBD' stroke='#757575' stroke-width='1'/>
+<text x='920.5' y='356' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#212121' font-weight='bold' text-anchor='middle'>In Progress</text>
+<text x='1022' y='357' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>12/10/2026 14:32</text>
+<text x='1186' y='357' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#757575' font-weight='bold' text-anchor='end'>›</text>
+<rect x='80' y='374' width='1120' height='44' rx='0' fill='#FCFCFC' stroke='#FFFFFF' stroke-width='0'/>
+<line x1='80' y1='418' x2='1200' y2='418' stroke='#E0E0E0' stroke-width='1'/>
+<text x='100' y='401' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>a41d77c2…</text>
+<text x='200' y='401' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start' text-decoration='underline'>Sin acceso a la carpeta compartida de Finanzas</text>
+<text x='580' y='401' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Accesos y permisos</text>
+<text x='770' y='401' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<rect x='870' y='385' width='49' height='22' rx='11.0' fill='#FFFFFF' stroke='#424242' stroke-width='1.5'/>
+<text x='894.5' y='400' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#212121' font-weight='bold' text-anchor='middle'>Open</text>
+<text x='1022' y='401' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>12/10/2026 11:05</text>
+<text x='1186' y='401' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#757575' font-weight='bold' text-anchor='end'>›</text>
+<rect x='80' y='418' width='1120' height='44' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<line x1='80' y1='462' x2='1200' y2='462' stroke='#E0E0E0' stroke-width='1'/>
+<text x='100' y='445' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>3b9e0f51…</text>
+<text x='200' y='445' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start' text-decoration='underline'>Impresora del piso 3 no imprime</text>
+<text x='580' y='445' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Hardware</text>
+<text x='770' y='445' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<rect x='870' y='429' width='49' height='22' rx='11.0' fill='#FFFFFF' stroke='#424242' stroke-width='1.5'/>
+<text x='894.5' y='444' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#212121' font-weight='bold' text-anchor='middle'>Open</text>
+<text x='1022' y='445' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>11/10/2026 17:48</text>
+<text x='1186' y='445' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#757575' font-weight='bold' text-anchor='end'>›</text>
+<rect x='80' y='462' width='1120' height='44' rx='0' fill='#FCFCFC' stroke='#FFFFFF' stroke-width='0'/>
+<line x1='80' y1='506' x2='1200' y2='506' stroke='#E0E0E0' stroke-width='1'/>
+<text x='100' y='489' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>c07a5d19…</text>
+<text x='200' y='489' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start' text-decoration='underline'>El correo no sincroniza en el móvil</text>
+<text x='580' y='489' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Correo y comunicación</text>
+<text x='770' y='489' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<rect x='870' y='473' width='79' height='22' rx='11.0' fill='#616161' stroke='#424242' stroke-width='1'/>
+<text x='909.5' y='488' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#FFFFFF' font-weight='bold' text-anchor='middle'>Resolved</text>
+<text x='1022' y='489' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>11/10/2026 09:12</text>
+<text x='1186' y='489' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#757575' font-weight='bold' text-anchor='end'>›</text>
+<rect x='80' y='506' width='1120' height='44' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<line x1='80' y1='550' x2='1200' y2='550' stroke='#E0E0E0' stroke-width='1'/>
+<text x='100' y='533' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>e2f48b6a…</text>
+<text x='200' y='533' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start' text-decoration='underline'>Error al instalar el ERP</text>
+<text x='580' y='533' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Software</text>
+<text x='770' y='533' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<rect x='870' y='517' width='101' height='22' rx='11.0' fill='#BDBDBD' stroke='#757575' stroke-width='1'/>
+<text x='920.5' y='532' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#212121' font-weight='bold' text-anchor='middle'>In Progress</text>
+<text x='1022' y='533' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>10/10/2026 16:30</text>
+<text x='1186' y='533' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#757575' font-weight='bold' text-anchor='end'>›</text>
+<rect x='80' y='550' width='1120' height='44' rx='0' fill='#FCFCFC' stroke='#FFFFFF' stroke-width='0'/>
+<line x1='80' y1='594' x2='1200' y2='594' stroke='#E0E0E0' stroke-width='1'/>
+<text x='100' y='577' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>91d3c2e7…</text>
+<text x='200' y='577' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start' text-decoration='underline'>Wi-Fi intermitente en la sala B</text>
+<text x='580' y='577' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Red y conectividad</text>
+<text x='770' y='577' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<rect x='870' y='561' width='49' height='22' rx='11.0' fill='#FFFFFF' stroke='#424242' stroke-width='1.5'/>
+<text x='894.5' y='576' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#212121' font-weight='bold' text-anchor='middle'>Open</text>
+<text x='1022' y='577' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>10/10/2026 10:02</text>
+<text x='1186' y='577' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#757575' font-weight='bold' text-anchor='end'>›</text>
+<rect x='80' y='594' width='1120' height='44' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<line x1='80' y1='638' x2='1200' y2='638' stroke='#E0E0E0' stroke-width='1'/>
+<text x='100' y='621' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>5a6b7c8d…</text>
+<text x='200' y='621' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start' text-decoration='underline'>Permisos para el CRM comercial</text>
+<text x='580' y='621' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Accesos y permisos</text>
+<text x='770' y='621' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<rect x='870' y='605' width='79' height='22' rx='11.0' fill='#616161' stroke='#424242' stroke-width='1'/>
+<text x='909.5' y='620' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#FFFFFF' font-weight='bold' text-anchor='middle'>Resolved</text>
+<text x='1022' y='621' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>09/10/2026 15:21</text>
+<text x='1186' y='621' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#757575' font-weight='bold' text-anchor='end'>›</text>
+<rect x='80' y='638' width='1120' height='44' rx='0' fill='#FCFCFC' stroke='#FFFFFF' stroke-width='0'/>
+<line x1='80' y1='682' x2='1200' y2='682' stroke='#E0E0E0' stroke-width='1'/>
+<text x='100' y='665' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>d8e9f0a1…</text>
+<text x='200' y='665' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start' text-decoration='underline'>Teclado con teclas que no responden</text>
+<text x='580' y='665' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Hardware</text>
+<text x='770' y='665' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<rect x='870' y='649' width='49' height='22' rx='11.0' fill='#FFFFFF' stroke='#424242' stroke-width='1.5'/>
+<text x='894.5' y='664' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#212121' font-weight='bold' text-anchor='middle'>Open</text>
+<text x='1022' y='665' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>09/10/2026 08:44</text>
+<text x='1186' y='665' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#757575' font-weight='bold' text-anchor='end'>›</text>
+<rect x='80' y='682' width='1120' height='44' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<line x1='80' y1='726' x2='1200' y2='726' stroke='#E0E0E0' stroke-width='1'/>
+<text x='100' y='709' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>7c1e2d3f…</text>
+<text x='200' y='709' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start' text-decoration='underline'>Pantalla parpadea en el portátil</text>
+<text x='580' y='709' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Hardware</text>
+<text x='770' y='709' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Alta</text>
+<rect x='870' y='693' width='79' height='22' rx='11.0' fill='#616161' stroke='#424242' stroke-width='1'/>
+<text x='909.5' y='708' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#FFFFFF' font-weight='bold' text-anchor='middle'>Resolved</text>
+<text x='1022' y='709' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>08/10/2026 13:10</text>
+<text x='1186' y='709' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#757575' font-weight='bold' text-anchor='end'>›</text>
+<text x='200' y='744' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start' font-style='italic'>… hasta 20 filas por página. Toda la fila (y el título como enlace) abre el detalle de la incidencia.</text>
+<text x='80' y='764' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Texto: Mostrando 1–20 de 27 · Página 1 de 2</text>
+<rect x='880' y='740' width='110' height='36' rx='4' fill='#9E9E9E' stroke='#9E9E9E' stroke-width='1'/>
+<text x='935.0' y='763.0' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#F5F5F5' font-weight='bold' text-anchor='middle'>‹ Anterior</text>
+<rect x='1000' y='740' width='36' height='36' rx='4' fill='#424242' stroke='#212121' stroke-width='1'/>
+<text x='1018' y='763' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#FFFFFF' font-weight='bold' text-anchor='middle'>1</text>
+<rect x='1044' y='740' width='36' height='36' rx='4' fill='#FFFFFF' stroke='#616161' stroke-width='1'/>
+<text x='1062' y='763' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='middle'>2</text>
+<rect x='1090' y='740' width='110' height='36' rx='4' fill='#FFFFFF' stroke='#616161' stroke-width='1'/>
+<text x='1145.0' y='763.0' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='middle'>Siguiente ›</text>
+<text x='1200' y='734' font-family='Arial, Helvetica, sans-serif' font-size='10' fill='#757575' font-weight='normal' text-anchor='end' font-style='italic'>Paginación</text>
+</svg>

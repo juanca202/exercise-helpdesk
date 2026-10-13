@@ -1,0 +1,42 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 375 812' width='375' height='812'>
+<rect x='0' y='0' width='375' height='812' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<rect x='0' y='0' width='375' height='56' rx='0' fill='#E0E0E0' stroke='#BDBDBD' stroke-width='1'/>
+<text x='16' y='35' font-family='Arial, Helvetica, sans-serif' font-size='20' fill='#424242' font-weight='bold' text-anchor='start'>☰</text>
+<rect x='44' y='16' width='24' height='24' rx='4' fill='#9E9E9E' stroke='#757575' stroke-width='1'/>
+<text x='76' y='34' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#212121' font-weight='bold' text-anchor='start'>Logo: HelpDesk Lite</text>
+<circle cx='343' cy='28' r='16' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/>
+<text x='343' y='33' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='middle'>E</text>
+<text x='16' y='96' font-family='Arial, Helvetica, sans-serif' font-size='22' fill='#212121' font-weight='bold' text-anchor='start'>Dashboard</text>
+<text x='16' y='118' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#616161' font-weight='normal' text-anchor='start'>Texto: Resumen de las incidencias registradas</text>
+<rect x='16' y='136' width='167' height='124' rx='6' fill='#F5F5F5' stroke='#616161' stroke-width='2'/>
+<text x='30' y='162' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#424242' font-weight='bold' text-anchor='start'>Indicador: Total</text>
+<text x='30' y='240' font-family='Arial, Helvetica, sans-serif' font-size='40' fill='#212121' font-weight='bold' text-anchor='start'>12</text>
+<rect x='191' y='136' width='167' height='124' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='205' y='162' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#424242' font-weight='bold' text-anchor='start'>Indicador: Abiertas</text>
+<rect x='205' y='172' width='47' height='21' rx='10.5' fill='#FFFFFF' stroke='#424242' stroke-width='1.5'/>
+<text x='228.5' y='186' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#212121' font-weight='bold' text-anchor='middle'>Open</text>
+<text x='205' y='240' font-family='Arial, Helvetica, sans-serif' font-size='40' fill='#212121' font-weight='bold' text-anchor='start'>5</text>
+<rect x='16' y='272' width='167' height='124' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='30' y='298' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#424242' font-weight='bold' text-anchor='start'>Indicador: En atención</text>
+<rect x='30' y='308' width='95' height='21' rx='10.5' fill='#BDBDBD' stroke='#757575' stroke-width='1'/>
+<text x='77.5' y='322' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#212121' font-weight='bold' text-anchor='middle'>In Progress</text>
+<text x='30' y='376' font-family='Arial, Helvetica, sans-serif' font-size='40' fill='#212121' font-weight='bold' text-anchor='start'>4</text>
+<rect x='191' y='272' width='167' height='124' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='205' y='298' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#424242' font-weight='bold' text-anchor='start'>Indicador: Resueltas</text>
+<rect x='205' y='308' width='74' height='21' rx='10.5' fill='#616161' stroke='#424242' stroke-width='1'/>
+<text x='242.0' y='322' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#FFFFFF' font-weight='bold' text-anchor='middle'>Resolved</text>
+<text x='205' y='376' font-family='Arial, Helvetica, sans-serif' font-size='40' fill='#212121' font-weight='bold' text-anchor='start'>3</text>
+<text x='16' y='432' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#212121' font-weight='bold' text-anchor='start'>Accesos rápidos</text>
+<rect x='16' y='448' width='343' height='72' rx='6' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<rect x='30' y='466' width='36' height='36' rx='6' fill='#E0E0E0' stroke='#BDBDBD' stroke-width='1'/>
+<text x='48' y='490' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#424242' font-weight='bold' text-anchor='middle'>☰</text>
+<text x='80' y='490' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start'>Tarjeta-enlace: Ver incidencias</text>
+<text x='345' y='491' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='#424242' font-weight='bold' text-anchor='end'>→</text>
+<rect x='16' y='532' width='343' height='72' rx='6' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1'/>
+<rect x='30' y='550' width='36' height='36' rx='6' fill='#E0E0E0' stroke='#BDBDBD' stroke-width='1'/>
+<text x='48' y='574' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#424242' font-weight='bold' text-anchor='middle'>+</text>
+<text x='80' y='574' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start'>Tarjeta-enlace: Nueva incidencia</text>
+<text x='345' y='575' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='#424242' font-weight='bold' text-anchor='end'>→</text>
+<text x='16' y='640' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start' font-style='italic'>Carga, error y vacío: mismos mensajes que en escritorio,</text>
+<text x='16' y='656' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start' font-style='italic'>en una sola columna; «Reintentar» a ancho completo.</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 800' width='1280' height='800'>
+<rect x='0' y='0' width='1280' height='800' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<rect x='0' y='0' width='1280' height='64' rx='0' fill='#E0E0E0' stroke='#BDBDBD' stroke-width='1'/>
+<rect x='16' y='18' width='28' height='28' rx='4' fill='#9E9E9E' stroke='#757575' stroke-width='1'/>
+<text x='54' y='37' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='#212121' font-weight='bold' text-anchor='start'>Logo: HelpDesk Lite</text>
+<text x='300' y='38' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#424242' font-weight='normal' text-anchor='start'>Dashboard</text>
+<text x='413' y='38' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#212121' font-weight='bold' text-anchor='start'>Incidencias</text>
+<rect x='409' y='58' width='98' height='4' rx='0' fill='#424242' stroke='#424242' stroke-width='0'/>
+<text x='543' y='38' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#424242' font-weight='normal' text-anchor='start'>Nueva incidencia</text>
+<text x='706' y='38' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start' font-style='italic'>← Menú de navegación</text>
+<circle cx='1066' cy='32' r='16' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/>
+<text x='1066' y='37' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='middle'>E</text>
+<text x='1090' y='37' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#424242' font-weight='normal' text-anchor='start'>Usuario: Empleado demo</text>
+<text x='80' y='94' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start' text-decoration='underline'>← Volver al listado</text>
+<text x='80' y='130' font-family='Arial, Helvetica, sans-serif' font-size='24' fill='#212121' font-weight='bold' text-anchor='start'>No puedo acceder a la VPN</text>
+<text x='80' y='156' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='normal' text-anchor='start'>ID: 6f1c2b0e-8d3a-4f5e-9a71-2c4d5e6f7a8b</text>
+<rect x='80' y='176' width='760' height='160' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='104' y='206' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#212121' font-weight='bold' text-anchor='start'>Descripción</text>
+<text x='104' y='234' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#424242' font-weight='normal' text-anchor='start'>Desde esta mañana la VPN rechaza mis credenciales con error de autenticación. Probé</text>
+<text x='104' y='256' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#424242' font-weight='normal' text-anchor='start'>reiniciar el equipo y el cliente VPN sin éxito; necesito acceder al ERP para cerrar el mes.</text>
+<rect x='870' y='176' width='330' height='410' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='894' y='206' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#212121' font-weight='bold' text-anchor='start'>Datos de la incidencia</text>
+<text x='894' y='236' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='bold' text-anchor='start'>Estado</text>
+<rect x='894' y='244' width='52' height='23' rx='11.5' fill='#FFFFFF' stroke='#424242' stroke-width='1.5'/>
+<text x='920.0' y='260' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='middle'>Open</text>
+<text x='894' y='294' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='bold' text-anchor='start'>Categoría</text>
+<text x='894' y='314' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start'>Red y conectividad</text>
+<text x='1050' y='294' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='bold' text-anchor='start'>Prioridad</text>
+<text x='1050' y='314' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start'>Alta</text>
+<text x='894' y='346' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='bold' text-anchor='start'>Fecha de creación</text>
+<text x='894' y='366' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='normal' text-anchor='start'>12/10/2026 14:32</text>
+<line x1='886' y1='390' x2='1184' y2='390' stroke='#E0E0E0' stroke-width='1'/>
+<text x='894' y='420' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start'>Acciones de estado</text>
+<rect x='894' y='436' width='282' height='44' rx='4' fill='#757575' stroke='#616161' stroke-width='1'/>
+<circle cx='916' cy='458.0' r='8' fill='none' stroke='#9E9E9E' stroke-width='3'/>
+<path d='M 916 450.0 A 8 8 0 0 1 924 458.0' fill='none' stroke='#FFFFFF' stroke-width='3'/>
+<text x='1045.0' y='463.0' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#FFFFFF' font-weight='bold' text-anchor='middle'>Aplicando…</text>
+<text x='894' y='500' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='normal' text-anchor='start' font-style='italic'>Acciones bloqueadas mientras se aplica</text>
+<text x='894' y='524' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#9E9E9E' font-weight='normal' text-anchor='start' font-style='italic'>Solo se muestran las transiciones válidas</text>
+<text x='894' y='540' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#9E9E9E' font-weight='normal' text-anchor='start' font-style='italic'>desde el estado actual; sin confirmación.</text>
+<rect x='80' y='352' width='760' height='432' rx='6' fill='#FFFFFF' stroke='#BDBDBD' stroke-width='1'/>
+<text x='104' y='382' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#212121' font-weight='bold' text-anchor='start'>Comentarios (1)</text>
+<text x='816' y='382' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='end' font-style='italic'>Del más antiguo al más reciente</text>
+<circle cx='118' cy='416' r='14' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/>
+<text x='118' y='421' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#424242' font-weight='bold' text-anchor='middle'>A</text>
+<text x='142' y='420' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start'>Agente demo</text>
+<text x='240' y='420' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='normal' text-anchor='start'>· 12/10/2026 15:02</text>
+<text x='142' y='442' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='normal' text-anchor='start'>Revisando las credenciales en el servidor VPN.</text>
+<line x1='104' y1='462' x2='816' y2='462' stroke='#E0E0E0' stroke-width='1'/>
+<rect x='104' y='474' width='712' height='110' rx='6' fill='#FFFFFF' stroke='#9E9E9E' stroke-width='1' stroke-dasharray='6 4'/>
+<text x='460' y='520' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#616161' font-weight='bold' text-anchor='middle'>Área: formulario de comentario</text>
+<text x='460' y='542' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#757575' font-weight='normal' text-anchor='middle' font-style='italic'>(se define en WF-001 de US-004)</text>
+</svg>

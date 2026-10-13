@@ -1,0 +1,6 @@
+[submodule "helpdesk-backend"]
+	path = helpdesk-backend
+	url = ./helpdesk-backend
+[submodule "helpdesk-frontend"]
+	path = helpdesk-frontend
+	url = ./helpdesk-frontend

@@ -1,0 +1,70 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 375 812' width='375' height='812'>
+<rect x='0' y='0' width='375' height='812' rx='0' fill='#FFFFFF' stroke='#FFFFFF' stroke-width='0'/>
+<rect x='0' y='0' width='375' height='56' rx='0' fill='#E0E0E0' stroke='#BDBDBD' stroke-width='1'/>
+<text x='16' y='35' font-family='Arial, Helvetica, sans-serif' font-size='20' fill='#424242' font-weight='bold' text-anchor='start'>☰</text>
+<rect x='44' y='16' width='24' height='24' rx='4' fill='#9E9E9E' stroke='#757575' stroke-width='1'/>
+<text x='76' y='34' font-family='Arial, Helvetica, sans-serif' font-size='15' fill='#212121' font-weight='bold' text-anchor='start'>Logo: HelpDesk Lite</text>
+<circle cx='343' cy='28' r='16' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/>
+<text x='343' y='33' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='middle'>E</text>
+<text x='16' y='94' font-family='Arial, Helvetica, sans-serif' font-size='22' fill='#212121' font-weight='bold' text-anchor='start'>Incidencias</text>
+<rect x='239' y='72' width='120' height='34' rx='4' fill='#424242' stroke='#212121' stroke-width='1'/>
+<text x='299.0' y='94.0' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#FFFFFF' font-weight='bold' text-anchor='middle'>+ Nueva</text>
+<text x='16' y='122' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#616161' font-weight='normal' text-anchor='start'>Texto: 27 incidencias</text>
+<rect x='16' y='134' width='160' height='36' rx='4' fill='#FFFFFF' stroke='#616161' stroke-width='1'/>
+<text x='96.0' y='157.0' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='middle'>Botón: Filtros (1)</text>
+<rect x='184' y='134' width='175' height='36' rx='4' fill='#FFFFFF' stroke='#757575' stroke-width='1'/>
+<text x='271' y='157' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='middle'>Orden: Recientes ↓</text>
+<rect x='16' y='180' width='141' height='26' rx='13' fill='#EEEEEE' stroke='#9E9E9E' stroke-width='1'/>
+<text x='28' y='197' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#212121' font-weight='normal' text-anchor='start'>Prioridad: Alta</text>
+<text x='143' y='197' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#424242' font-weight='bold' text-anchor='middle'>✕</text>
+<text x='180' y='197' font-family='Arial, Helvetica, sans-serif' font-size='12' fill='#424242' font-weight='normal' text-anchor='start' text-decoration='underline'>Limpiar filtros</text>
+<rect x='16' y='220' width='343' height='94' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='30' y='244' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start' text-decoration='underline'>No puedo acceder a la VPN</text>
+<text x='30' y='264' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start'>6f1c2b0e… · 12/10/2026 14:32</text>
+<rect x='30' y='276' width='126' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='93.0' y='290' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Red y conectividad</text>
+<rect x='162' y='276' width='40' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='182.0' y='290' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Alta</text>
+<rect x='208' y='276' width='95' height='21' rx='10.5' fill='#BDBDBD' stroke='#757575' stroke-width='1'/>
+<text x='255.5' y='290' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#212121' font-weight='bold' text-anchor='middle'>In Progress</text>
+<rect x='16' y='324' width='343' height='94' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='30' y='348' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start' text-decoration='underline'>Sin acceso a la carpeta compartida…</text>
+<text x='30' y='368' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start'>a41d77c2… · 12/10/2026 11:05</text>
+<rect x='30' y='380' width='126' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='93.0' y='394' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Accesos y permisos</text>
+<rect x='162' y='380' width='40' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='182.0' y='394' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Alta</text>
+<rect x='208' y='380' width='47' height='21' rx='10.5' fill='#FFFFFF' stroke='#424242' stroke-width='1.5'/>
+<text x='231.5' y='394' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#212121' font-weight='bold' text-anchor='middle'>Open</text>
+<rect x='16' y='428' width='343' height='94' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='30' y='452' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start' text-decoration='underline'>Impresora del piso 3 no imprime</text>
+<text x='30' y='472' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start'>3b9e0f51… · 11/10/2026 17:48</text>
+<rect x='30' y='484' width='65' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='62.5' y='498' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Hardware</text>
+<rect x='101' y='484' width='40' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='121.0' y='498' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Alta</text>
+<rect x='147' y='484' width='47' height='21' rx='10.5' fill='#FFFFFF' stroke='#424242' stroke-width='1.5'/>
+<text x='170.5' y='498' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#212121' font-weight='bold' text-anchor='middle'>Open</text>
+<rect x='16' y='532' width='343' height='94' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='30' y='556' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start' text-decoration='underline'>El correo no sincroniza en el móvil</text>
+<text x='30' y='576' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start'>c07a5d19… · 11/10/2026 09:12</text>
+<rect x='30' y='588' width='145' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='102.5' y='602' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Correo y comunicación</text>
+<rect x='181' y='588' width='40' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='201.0' y='602' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Alta</text>
+<rect x='227' y='588' width='74' height='21' rx='10.5' fill='#616161' stroke='#424242' stroke-width='1'/>
+<text x='264.0' y='602' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#FFFFFF' font-weight='bold' text-anchor='middle'>Resolved</text>
+<rect x='16' y='636' width='343' height='94' rx='6' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1'/>
+<text x='30' y='660' font-family='Arial, Helvetica, sans-serif' font-size='14' fill='#212121' font-weight='bold' text-anchor='start' text-decoration='underline'>Error al instalar el ERP</text>
+<text x='30' y='680' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#757575' font-weight='normal' text-anchor='start'>e2f48b6a… · 10/10/2026 16:30</text>
+<rect x='30' y='692' width='65' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='62.5' y='706' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Software</text>
+<rect x='101' y='692' width='40' height='21' rx='4' fill='#F5F5F5' stroke='#BDBDBD' stroke-width='1'/>
+<text x='121.0' y='706' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#424242' font-weight='normal' text-anchor='middle'>Alta</text>
+<rect x='147' y='692' width='95' height='21' rx='10.5' fill='#BDBDBD' stroke='#757575' stroke-width='1'/>
+<text x='194.5' y='706' font-family='Arial, Helvetica, sans-serif' font-size='11' fill='#212121' font-weight='bold' text-anchor='middle'>In Progress</text>
+<rect x='16' y='744' width='343' height='44' rx='4' fill='#FFFFFF' stroke='#BDBDBD' stroke-width='1'/>
+<text x='30' y='771' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#9E9E9E' font-weight='normal' text-anchor='start'>‹ Anterior</text>
+<text x='187' y='771' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#424242' font-weight='bold' text-anchor='middle'>Página 1 de 2</text>
+<text x='345' y='771' font-family='Arial, Helvetica, sans-serif' font-size='13' fill='#212121' font-weight='bold' text-anchor='end'>Siguiente ›</text>
+</svg>
