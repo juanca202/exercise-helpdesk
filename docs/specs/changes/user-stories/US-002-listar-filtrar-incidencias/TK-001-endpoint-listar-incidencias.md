@@ -39,13 +39,13 @@ helpdesk-backend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Definir en `incidents.schemas.ts` el esquema de la query del listado: `status`, `priority`, `category`, `order` y `page`, todos opcionales, con mensajes de validación propios en español por parámetro
+- [x] **IT-01** — Definir en `incidents.schemas.ts` el esquema de la query del listado: `status`, `priority`, `category`, `order` y `page`, todos opcionales, con mensajes de validación propios en español por parámetro
   `status` con los valores literales `Open`, `In Progress` y `Resolved` (reutilizar el enum de estado si TK-002 de US-001 ya lo declara); `priority` y `category` con los enums existentes; `order` en `asc` | `desc` con `desc` por defecto; `page` convertido a número, entero ≥ 1, con `1` por defecto. Esquema no estricto: las claves no declaradas (p. ej. `pageSize`) se descartan sin error. Un filtro repetido (varios valores) no cumple el enum y se rechaza.
-- [ ] **IT-02** — Definir el esquema de respuesta `200`: `items` (incidencias sin comentarios, máximo 20), `total`, `page`, `pageSize` (siempre 20) y `totalPages`
-- [ ] **IT-03** — Ampliar `incidents.repository.ts` con el recuento de incidencias que cumplen los filtros y la consulta de una página (filtros, orden, límite y desplazamiento)
+- [x] **IT-02** — Definir el esquema de respuesta `200`: `items` (incidencias sin comentarios, máximo 20), `total`, `page`, `pageSize` (siempre 20) y `totalPages`
+- [x] **IT-03** — Ampliar `incidents.repository.ts` con el recuento de incidencias que cumplen los filtros y la consulta de una página (filtros, orden, límite y desplazamiento)
   Filtros como parámetros enlazados, sin concatenar valores de la petición; orden `created_at` y luego `id`, ambos en el sentido de `order` (tomado del valor ya validado); el formato ISO 8601 UTC de `created_at` fijado en TK-001 de US-001 ordena cronológicamente. Sin tipos de Fastify en el repositorio.
-- [ ] **IT-04** — Implementar el listado en `incidents.service.ts`: desplazamiento `(page - 1) × 20`, `totalPages = ceil(total / 20)` (`0` cuando `total = 0`) y la página solicitada en `page`, también cuando supera `totalPages` (`items` vacío)
-- [ ] **IT-05** — Registrar `GET /` en `incidents.routes.ts` con las respuestas `200` y `400` declaradas en el contrato OpenAPI
-- [ ] **IT-06** — Pruebas del repositorio con fechas de creación fijas: cada filtro por separado y combinados, orden descendente y ascendente, desempate por `id` en el mismo sentido, límite y desplazamiento sin repetir ni omitir elementos entre páginas
-- [ ] **IT-07** — Pruebas con `inject` de `GET /incidents`
+- [x] **IT-04** — Implementar el listado en `incidents.service.ts`: desplazamiento `(page - 1) × 20`, `totalPages = ceil(total / 20)` (`0` cuando `total = 0`) y la página solicitada en `page`, también cuando supera `totalPages` (`items` vacío)
+- [x] **IT-05** — Registrar `GET /` en `incidents.routes.ts` con las respuestas `200` y `400` declaradas en el contrato OpenAPI
+- [x] **IT-06** — Pruebas del repositorio con fechas de creación fijas: cada filtro por separado y combinados, orden descendente y ascendente, desempate por `id` en el mismo sentido, límite y desplazamiento sin repetir ni omitir elementos entre páginas
+- [x] **IT-07** — Pruebas con `inject` de `GET /incidents`
   Sin filtros devuelve todas (orden descendente por defecto); filtros individuales y combinados, incluido `status=In%20Progress`; `order=asc`; 21 incidencias → página 1 con 20 y página 2 con 1, `total` 21 y `totalPages` 2; sin incidencias → `total` 0, `totalPages` 0, `items` vacío; `page` mayor que `totalPages` → `200` con `items` vacío y totales reales; `400` con un `issue` por parámetro (`instancePath` = `/<parámetro>`, motivo en español) para `status`, `priority` y `category` fuera de su enum, `order` distinto de `asc`/`desc`, `page` no numérico, decimal o < 1, y un filtro repetido; varios parámetros inválidos → varios `issues`; `pageSize` u otro parámetro no declarado no altera el resultado; la operación figura en el OpenAPI
