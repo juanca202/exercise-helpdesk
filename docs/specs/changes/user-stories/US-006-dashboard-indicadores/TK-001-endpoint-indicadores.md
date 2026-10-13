@@ -40,15 +40,15 @@ helpdesk-backend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Añadir en `incidents.repository.ts` el método de recuento por estado con una sola consulta agrupada por `status`; sin importar tipos de Fastify
+- [x] **IT-01** — Añadir en `incidents.repository.ts` el método de recuento por estado con una sola consulta agrupada por `status`; sin importar tipos de Fastify
   Devuelve el recuento de `Open`, `In Progress` y `Resolved`; un estado sin incidencias cuenta `0`.
-- [ ] **IT-02** — Definir en `incidents.schemas.ts` el esquema de respuesta `{ total, open, inProgress, resolved }`, todos enteros ≥ 0
-- [ ] **IT-03** — Implementar en `incidents.service.ts` la obtención de los indicadores: mapear los recuentos a `open`, `inProgress` y `resolved` y calcular `total` como su suma; sin caché ni valores precalculados
-- [ ] **IT-04** — Declarar `GET /summary` en `incidents.routes.ts` junto a `GET /:id`, sin esquema de query ni body, con respuestas `200` y `500` declaradas en el contrato
+- [x] **IT-02** — Definir en `incidents.schemas.ts` el esquema de respuesta `{ total, open, inProgress, resolved }`, todos enteros ≥ 0
+- [x] **IT-03** — Implementar en `incidents.service.ts` la obtención de los indicadores: mapear los recuentos a `open`, `inProgress` y `resolved` y calcular `total` como su suma; sin caché ni valores precalculados
+- [x] **IT-04** — Declarar `GET /summary` en `incidents.routes.ts` junto a `GET /:id`, sin esquema de query ni body, con respuestas `200` y `500` declaradas en el contrato
   La ruta estática se resuelve antes que la paramétrica; `GET /incidents/summary` nunca debe llegar al manejador de `/:id`.
-- [ ] **IT-05** — Pruebas del repositorio: base vacía devuelve los tres recuentos en `0`; con incidencias en varios estados devuelve el recuento correcto de cada uno
-- [ ] **IT-06** — Pruebas con `inject` del endpoint: sin incidencias responde `200` con los cuatro valores en `0`; con una mezcla de estados responde los recuentos esperados y `total` igual a su suma
+- [x] **IT-05** — Pruebas del repositorio: base vacía devuelve los tres recuentos en `0`; con incidencias en varios estados devuelve el recuento correcto de cada uno
+- [x] **IT-06** — Pruebas con `inject` del endpoint: sin incidencias responde `200` con los cuatro valores en `0`; con una mezcla de estados responde los recuentos esperados y `total` igual a su suma
   Los datos de prueba se siembran en la base `:memory:` con incidencias en `Open`, `In Progress` y `Resolved` (Object Mother).
-- [ ] **IT-07** — Prueba de recálculo: registrar una incidencia y cambiar el estado de otra en la base de pruebas entre dos consultas, y verificar que la segunda respuesta refleja ambos cambios
-- [ ] **IT-08** — Prueba de error: un fallo del repositorio durante la consulta responde `500` con `{statusCode, error, message}` sin exponer detalles internos
-- [ ] **IT-09** — Verificar que `GET /incidents/summary` y su esquema de respuesta figuran en el documento OpenAPI y no alteran la operación `GET /incidents/{id}`
+- [x] **IT-07** — Prueba de recálculo: registrar una incidencia y cambiar el estado de otra en la base de pruebas entre dos consultas, y verificar que la segunda respuesta refleja ambos cambios
+- [x] **IT-08** — Prueba de error: un fallo del repositorio durante la consulta responde `500` con `{statusCode, error, message}` sin exponer detalles internos
+- [x] **IT-09** — Verificar que `GET /incidents/summary` y su esquema de respuesta figuran en el documento OpenAPI y no alteran la operación `GET /incidents/{id}`

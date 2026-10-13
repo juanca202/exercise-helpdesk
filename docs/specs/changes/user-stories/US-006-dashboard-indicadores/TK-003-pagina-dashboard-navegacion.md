@@ -46,19 +46,19 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Reorganizar `app.routes.ts`: `MainLayout` como contenedor de las rutas de la aplicación, `/` carga el dashboard con carga diferida (`loadComponent`) y título «Dashboard», y `incidents` conserva las rutas de la feature con `incidents/new` como registro
+- [x] **IT-01** — Reorganizar `app.routes.ts`: `MainLayout` como contenedor de las rutas de la aplicación, `/` carga el dashboard con carga diferida (`loadComponent`) y título «Dashboard», y `incidents` conserva las rutas de la feature con `incidents/new` como registro
   Se elimina la redirección de la raíz a `incidents/new` que dejó TK-005 de US-001; las rutas de error y la ruta comodín `**` se mantienen al final.
-- [ ] **IT-02** — Completar en `MainLayout` las opciones de navegación «Dashboard» (`/`), «Incidencias» (`/incidents`) y «Nueva incidencia» (`/incidents/new`) con su icono `ft-icon`, marcando la sección activa
+- [x] **IT-02** — Completar en `MainLayout` las opciones de navegación «Dashboard» (`/`), «Incidencias» (`/incidents`) y «Nueva incidencia» (`/incidents/new`) con su icono `ft-icon`, marcando la sección activa
   «Dashboard» solo se marca activa con coincidencia exacta de `/`; «Incidencias» no se marca activa en `/incidents/new`.
-- [ ] **IT-03** — Ajustar el pie del menú al wireframe: mostrar el usuario de la demo («Empleado demo») y retirar el acceso a `/settings`, que no tiene ruta
-- [ ] **IT-04** — Implementar la página `incident-dashboard` en `features/incidents/pages/` que solicita los indicadores con `getSummary` al abrirse, sin notificación global de error duplicada
-- [ ] **IT-05** — Mostrar el título «Dashboard», el texto que indica que los datos se calculan al abrir la página y las cuatro tarjetas de igual tamaño: «Total» (destacada), «Abiertas» (`Open`), «En atención» (`In Progress`) y «Resueltas» (`Resolved`), con el texto «Total = Abiertas + En atención + Resueltas»
+- [x] **IT-03** — Ajustar el pie del menú al wireframe: mostrar el usuario de la demo («Empleado demo») y retirar el acceso a `/settings`, que no tiene ruta
+- [x] **IT-04** — Implementar la página `incident-dashboard` en `features/incidents/pages/` que solicita los indicadores con `getSummary` al abrirse, sin notificación global de error duplicada
+- [x] **IT-05** — Mostrar el título «Dashboard», el texto que indica que los datos se calculan al abrir la página y las cuatro tarjetas de igual tamaño: «Total» (destacada), «Abiertas» (`Open`), «En atención» (`In Progress`) y «Resueltas» (`Resolved`), con el texto «Total = Abiertas + En atención + Resueltas»
   Mapeo `total`, `open`, `inProgress`, `resolved` ↔ Total, Abiertas, En atención, Resueltas. Las tarjetas son solo informativas: no son enlaces ni botones. Sin gráficos, series temporales, comparaciones ni botón «Actualizar».
-- [ ] **IT-06** — Mostrar los accesos rápidos «Ver listado de incidencias» (`/incidents`) y «Nueva incidencia» (`/incidents/new`), disponibles en todos los estados de la página
-- [ ] **IT-07** — Estado de carga: cada tarjeta muestra su título y un bloque gris en lugar del número, con el texto «Cargando indicadores…» anunciado a tecnologías de asistencia
-- [ ] **IT-08** — Estado de error: alerta «No se pudieron cargar los indicadores» con un motivo comprensible y el botón «Reintentar», que vuelve a consultar; las tarjetas no se muestran
-- [ ] **IT-09** — Estado sin incidencias: las cuatro tarjetas en `0` y el mensaje «Aún no hay incidencias registradas» con el botón «Nueva incidencia» hacia `/incidents/new`
-- [ ] **IT-10** — Vista responsiva según el wireframe móvil: tarjetas en cuadrícula de 2 × 2, accesos rápidos apilados a ancho completo y menú tras el icono ☰
-- [ ] **IT-11** — Pruebas unitarias de la página con MSW: valores y suma coherente, estado de carga, estado sin incidencias con su mensaje, error con reintento exitoso, enlaces de los accesos rápidos, ausencia de enlaces en las tarjetas y accesibilidad (AXE) en cada estado
-- [ ] **IT-12** — Pruebas unitarias de `MainLayout`: las tres opciones enlazan a `/`, `/incidents` y `/incidents/new` y se marca activa la sección actual
-- [ ] **IT-13** — Revisar el E2E de US-001 (`e2e/incident-registration.spec.ts`, de [TK-006 de US-001](../US-001-registrar-incidencia/TK-006-e2e-registro-incidencia.md)): si navega a `/` esperando el formulario de registro, cambiar esa navegación a `/incidents/new`; no modificar sus escenarios ni sus aserciones
+- [x] **IT-06** — Mostrar los accesos rápidos «Ver listado de incidencias» (`/incidents`) y «Nueva incidencia» (`/incidents/new`), disponibles en todos los estados de la página
+- [x] **IT-07** — Estado de carga: cada tarjeta muestra su título y un bloque gris en lugar del número, con el texto «Cargando indicadores…» anunciado a tecnologías de asistencia
+- [x] **IT-08** — Estado de error: alerta «No se pudieron cargar los indicadores» con un motivo comprensible y el botón «Reintentar», que vuelve a consultar; las tarjetas no se muestran
+- [x] **IT-09** — Estado sin incidencias: las cuatro tarjetas en `0` y el mensaje «Aún no hay incidencias registradas» con el botón «Nueva incidencia» hacia `/incidents/new`
+- [x] **IT-10** — Vista responsiva según el wireframe móvil: tarjetas en cuadrícula de 2 × 2, accesos rápidos apilados a ancho completo y menú tras el icono ☰
+- [x] **IT-11** — Pruebas unitarias de la página con MSW: valores y suma coherente, estado de carga, estado sin incidencias con su mensaje, error con reintento exitoso, enlaces de los accesos rápidos, ausencia de enlaces en las tarjetas y accesibilidad (AXE) en cada estado
+- [x] **IT-12** — Pruebas unitarias de `MainLayout`: las tres opciones enlazan a `/`, `/incidents` y `/incidents/new` y se marca activa la sección actual
+- [x] **IT-13** — Revisar el E2E de US-001 (`e2e/incident-registration.spec.ts`, de [TK-006 de US-001](../US-001-registrar-incidencia/TK-006-e2e-registro-incidencia.md)): si navega a `/` esperando el formulario de registro, cambiar esa navegación a `/incidents/new`; no modificar sus escenarios ni sus aserciones

@@ -34,8 +34,8 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Escenario con datos: abrir `/`, verificar que es el dashboard y que las cuatro tarjetas muestran los valores devueltos por la API simulada, con el total igual a la suma de abiertas, en atención y resueltas, y sin gráficos ni comparaciones
-- [ ] **IT-02** — Escenario sin incidencias: la API simulada responde los cuatro valores en `0`; verificar las tarjetas en `0`, el mensaje «Aún no hay incidencias registradas» y su botón «Nueva incidencia»
-- [ ] **IT-03** — Escenario de error con reintento: la primera consulta responde `500`; verificar la alerta con «Reintentar» y que no se muestran tarjetas; tras pulsar «Reintentar» con la API respondiendo `200`, verificar los indicadores
-- [ ] **IT-04** — Escenario de carga: con la respuesta de la API retenida, verificar el texto «Cargando indicadores…» y que los accesos rápidos siguen disponibles
-- [ ] **IT-05** — Escenario de navegación: desde el menú, «Incidencias» lleva a `/incidents`, «Nueva incidencia» a `/incidents/new` y «Dashboard» vuelve a `/`, con la sección activa marcada; los accesos rápidos llevan al listado y al registro
+- [x] **IT-01** — Escenario con datos: abrir `/`, verificar que es el dashboard y que las cuatro tarjetas muestran los valores devueltos por la API simulada, con el total igual a la suma de abiertas, en atención y resueltas, y sin gráficos ni comparaciones
+- [x] **IT-02** — Escenario sin incidencias: la API simulada responde los cuatro valores en `0`; verificar las tarjetas en `0`, el mensaje «Aún no hay incidencias registradas» y su botón «Nueva incidencia»
+- [x] **IT-03** — Escenario de error con reintento: la primera consulta responde `500`; verificar la alerta con «Reintentar» y que no se muestran tarjetas; tras pulsar «Reintentar» con la API respondiendo `200`, verificar los indicadores
+- [x] **IT-04** — Escenario de carga: con la respuesta de la API retenida, verificar el texto «Cargando indicadores…» y que los accesos rápidos siguen disponibles
+- [x] **IT-05** — Escenario de navegación: desde el menú, «Incidencias» lleva a `/incidents`, «Nueva incidencia» a `/incidents/new` y «Dashboard» vuelve a `/`, con la sección activa marcada; los accesos rápidos llevan al listado y al registro

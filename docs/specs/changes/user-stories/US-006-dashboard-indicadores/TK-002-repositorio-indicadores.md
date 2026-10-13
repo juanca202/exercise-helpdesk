@@ -37,9 +37,9 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Definir el modelo `IncidentSummary` con los cuatro campos enteros del contrato (`total`, `open`, `inProgress`, `resolved`), con TSDoc que remita a MD-003
-- [ ] **IT-02** — Añadir a `IncidentRepository` la lectura `getSummary` mediante `getResource()` sobre `getApiUrl('incidents/summary')`, sin parámetros
+- [x] **IT-01** — Definir el modelo `IncidentSummary` con los cuatro campos enteros del contrato (`total`, `open`, `inProgress`, `resolved`), con TSDoc que remita a MD-003
+- [x] **IT-02** — Añadir a `IncidentRepository` la lectura `getSummary` mediante `getResource()` sobre `getApiUrl('incidents/summary')`, sin parámetros
   Expone valor, carga, error y recarga del recurso para que la página muestre carga, error y reintento.
-- [ ] **IT-03** — Añadir en `src/mocks/handlers.ts` el handler por defecto de `GET /incidents/summary` con una respuesta `200` coherente (`total` igual a la suma de los tres estados)
-- [ ] **IT-04** — Definir las variantes de respuesta que las pruebas aplican con `server.use(...)`: `200` con los cuatro valores en `0` y `500` con `{statusCode, error, message}`
-- [ ] **IT-05** — Pruebas unitarias de `getSummary`: con datos devuelve el modelo tal cual; sin incidencias devuelve los cuatro ceros sin error; ante `500` y fallo de red expone el error y deja de estar en carga
+- [x] **IT-03** — Añadir en `src/mocks/handlers.ts` el handler por defecto de `GET /incidents/summary` con una respuesta `200` coherente (`total` igual a la suma de los tres estados)
+- [x] **IT-04** — Definir las variantes de respuesta que las pruebas aplican con `server.use(...)`: `200` con los cuatro valores en `0` y `500` con `{statusCode, error, message}`
+- [x] **IT-05** — Pruebas unitarias de `getSummary`: con datos devuelve el modelo tal cual; sin incidencias devuelve los cuatro ceros sin error; ante `500` y fallo de red expone el error y deja de estar en carga
