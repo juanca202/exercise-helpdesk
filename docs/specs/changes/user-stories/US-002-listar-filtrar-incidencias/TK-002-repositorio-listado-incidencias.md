@@ -42,14 +42,14 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Ampliar `incident.ts` con las opciones de estado (`Open`, `In Progress`, `Resolved`, mostradas literales), el orden (`asc` | `desc`), la consulta del listado (filtros opcionales, orden, página), la página de respuesta del contrato (`items`, `total`, `page`, `pageSize`, `totalPages`) y la constante de tamaño de página 20
+- [x] **IT-01** — Ampliar `incident.ts` con las opciones de estado (`Open`, `In Progress`, `Resolved`, mostradas literales), el orden (`asc` | `desc`), la consulta del listado (filtros opcionales, orden, página), la página de respuesta del contrato (`items`, `total`, `page`, `pageSize`, `totalPages`) y la constante de tamaño de página 20
   Los tipos siguen el contrato OpenAPI de [API-001](../../../../architecture/incidencias/apis/API-001-incidencias.md#get-incidents), sin redefinir a mano campos ajenos al contrato.
-- [ ] **IT-02** — Añadir al mapper la conversión de la consulta a los parámetros HTTP: omitir los filtros sin valor y enviar `order` y `page`
+- [x] **IT-02** — Añadir al mapper la conversión de la consulta a los parámetros HTTP: omitir los filtros sin valor y enviar `order` y `page`
   `In Progress` viaja codificado en la URL; los valores no se validan en el mapper.
-- [ ] **IT-03** — Añadir al mapper la conversión entre la consulta y los parámetros de la dirección de la aplicación, en ambos sentidos
+- [x] **IT-03** — Añadir al mapper la conversión entre la consulta y los parámetros de la dirección de la aplicación, en ambos sentidos
   De la dirección a la consulta: valores por defecto `order = desc` y `page = 1` cuando faltan, y valores conservados tal cual llegan (sin validarlos), para que la API rechace con `400` un valor inválido. De la consulta a la dirección: omitir filtros vacíos y los valores por defecto.
-- [ ] **IT-04** — Añadir al mapper la conversión de la página de respuesta al resultado de colección (`data`, `total`) y la extracción de los errores de validación de un `400` como lista de parámetro (de `instancePath`, sin la barra inicial) y motivo
-- [ ] **IT-05** — Implementar `findAll()` en `IncidentRepository`: recurso con `getResourceCollection()` cuya factoría recibe la consulta y llama a `GET` sobre `getApiUrl('incidents')` con los parámetros mapeados
-- [ ] **IT-06** — Añadir el handler MSW de `GET /incidents` sobre una colección determinista de incidencias de ejemplo (más de 20, con estados, prioridades, categorías y fechas variadas)
+- [x] **IT-04** — Añadir al mapper la conversión de la página de respuesta al resultado de colección (`data`, `total`) y la extracción de los errores de validación de un `400` como lista de parámetro (de `instancePath`, sin la barra inicial) y motivo
+- [x] **IT-05** — Implementar `findAll()` en `IncidentRepository`: recurso con `getResourceCollection()` cuya factoría recibe la consulta y llama a `GET` sobre `getApiUrl('incidents')` con los parámetros mapeados
+- [x] **IT-06** — Añadir el handler MSW de `GET /incidents` sobre una colección determinista de incidencias de ejemplo (más de 20, con estados, prioridades, categorías y fechas variadas)
   Aplica los filtros presentes, el orden por `createdAt` con desempate por `id`, páginas de 20 con los totales del contrato e `items` vacío fuera de rango; responde `400` con la estructura `{statusCode, error, message, issues[]}` ante un valor fuera de enum o una página inválida. Los specs sobreescriben respuestas puntuales con `server.use(...)`.
-- [ ] **IT-07** — Pruebas unitarias del mapper (consulta ↔ dirección, params HTTP sin filtros vacíos, respuesta a colección, extracción de `issues`) y del repositorio con MSW: parámetros enviados por filtro, combinación y orden, `In Progress` codificado, `value` y `total` de la página, `400` con `issues` accesibles desde el error, `500` y fallo de red; datos de prueba con Object Mother
+- [x] **IT-07** — Pruebas unitarias del mapper (consulta ↔ dirección, params HTTP sin filtros vacíos, respuesta a colección, extracción de `issues`) y del repositorio con MSW: parámetros enviados por filtro, combinación y orden, `In Progress` codificado, `value` y `total` de la página, `400` con `issues` accesibles desde el error, `500` y fallo de red; datos de prueba con Object Mother

@@ -32,9 +32,9 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Escenario de listado: abrir `/incidents` con una página simulada y verificar las columnas, el id abreviado a 8 caracteres, los totales de paginación y que la fila enlaza a `/incidents/:id`
-- [ ] **IT-02** — Escenario de filtros combinados: elegir estado y prioridad y verificar que la petición lleva ambos parámetros, que la dirección los refleja con `page` en 1 y que se muestran sus etiquetas; quitar una etiqueta y limpiar todos los filtros
-- [ ] **IT-03** — Escenario de orden: pulsar el encabezado «Fecha de creación» y verificar `order=asc` en la petición y en la dirección, y el orden ascendente de las filas mostradas
-- [ ] **IT-04** — Escenario de paginación: pulsar «Siguiente ›» y verificar `page=2` en la petición y en la dirección; recargar y volver atrás conservan filtros, orden y página
-- [ ] **IT-05** — Escenarios de estados vacíos: sin incidencias registradas (`total` 0 sin filtros) y sin coincidencias con filtros, este con «Limpiar filtros» que restablece el listado
-- [ ] **IT-06** — Escenarios de error: `500` muestra la alerta con «Reintentar» y, al reintentar con respuesta correcta, el listado; una dirección con un filtro inválido recibe `400` con `issues` y la alerta muestra el parámetro y su motivo en español
+- [x] **IT-01** — Escenario de listado: abrir `/incidents` con una página simulada y verificar las columnas, el id abreviado a 8 caracteres, los totales de paginación y que la fila enlaza a `/incidents/:id`
+- [x] **IT-02** — Escenario de filtros combinados: elegir estado y prioridad y verificar que la petición lleva ambos parámetros, que la dirección los refleja con `page` en 1 y que se muestran sus etiquetas; quitar una etiqueta y limpiar todos los filtros
+- [x] **IT-03** — Escenario de orden: pulsar el encabezado «Fecha de creación» y verificar `order=asc` en la petición y en la dirección, y el orden ascendente de las filas mostradas
+- [x] **IT-04** — Escenario de paginación: pulsar «Siguiente ›» y verificar `page=2` en la petición y en la dirección; recargar y volver atrás conservan filtros, orden y página
+- [x] **IT-05** — Escenarios de estados vacíos: sin incidencias registradas (`total` 0 sin filtros) y sin coincidencias con filtros, este con «Limpiar filtros» que restablece el listado
+- [x] **IT-06** — Escenarios de error: `500` muestra la alerta con «Reintentar» y, al reintentar con respuesta correcta, el listado; una dirección con un filtro inválido recibe `400` con `issues` y la alerta muestra el parámetro y su motivo en español
