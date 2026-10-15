@@ -2,11 +2,11 @@
 
 ## US-005-cambiar-estado-incidencia
 
-<!-- work:id=US-005 · status=In Progress -->
-**Estado:** In Progress
+<!-- work:id=US-005 · status=Done -->
+**Estado:** Done
 **Tipo:** historia de usuario
 **Fecha de creación:** 2026-10-15 12:30
-**Ultima actualizacion:** 2026-10-15 13:10
+**Ultima actualizacion:** 2026-10-15 14:10
 
 ## Unidades
 
@@ -104,4 +104,5 @@
 
 ## Decisiones adicionales
 
-- Base de la rama: tras integrar US-002 y US-003 en `main`, a petición del usuario («Integrar todos antes»). Las puertas de cierre (quality-check, code-review, coverage-verify) quedaron omitidas en esas dos integraciones por decisión del usuario.
+- Base de la rama: tras integrar US-002 y US-003 en `main`, a petición del usuario («Integrar todos antes»). Las puertas de cierre quedaron omitidas en esas dos integraciones por decisión del usuario; en US-005 sí corrieron las tres (quality-check ✅, code-review ✅, coverage-verify ⚠️ aprobado con observaciones).
+- Para el veredicto de quality-check del frontend se corrigieron dos pruebas e2e preexistentes de US-002 (`e2e/incident-list.spec.ts`, `expect.poll`); el cambio se integró con US-005.
