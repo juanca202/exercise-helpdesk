@@ -6,7 +6,7 @@
 **Estado:** In Progress
 **Tipo:** historia de usuario
 **Fecha de creación:** 2026-10-15 12:30
-**Ultima actualizacion:** 2026-10-15 13:02
+**Ultima actualizacion:** 2026-10-15 13:10
 
 ## Unidades
 
@@ -87,8 +87,20 @@
 
 ### TK-004: Pruebas E2E del cambio de estado de una incidencia
 
-<!-- unit:id=TK-004 · status=Pending -->
-**Estado:** Pending
+<!-- unit:id=TK-004 · status=Done -->
+**Estado:** Done
+**Iniciado:** 2026-10-15 13:04
+**Finalizado:** 2026-10-15 13:10
+**Implementador:** juanca202 / Claude / claude-sonnet-5-5
+
+**Archivos:**
+```
++ helpdesk-frontend/e2e/incident-status.spec.ts
+```
+
+**Notas:**
+- 4 escenarios E2E (ciclo completo, aplicación en curso, error 500 y rechazo 409 con recarga) en verde, con un servidor `ng serve` propio en el puerto 4310 mediante una configuración temporal de Playwright (el puerto 4200 estaba ocupado por otra aplicación).
+- Corrida única de e2e sobre el código consolidado: 25 pasan y 2 fallan en `e2e/incident-list.spec.ts` («invierte el orden…» y «pagina con “Siguiente”…»). Es un fallo preexistente de US-002, ajeno a esta historia: ocurre igual en `main` y en el commit original `9b3dd72` de US-002 (una aserción sobre `requests.at(-1)` se evalúa antes de que la petición se registre).
 
 ## Decisiones adicionales
 

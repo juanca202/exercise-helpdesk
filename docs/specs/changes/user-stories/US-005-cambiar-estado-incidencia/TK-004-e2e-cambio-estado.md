@@ -33,8 +33,8 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Escenario del ciclo completo: abrir el detalle de una incidencia en `Open`, verificar que solo se ofrece «Iniciar atención», aplicarla y verificar `In Progress`, el aviso de éxito y que solo se ofrece «Resolver»; aplicarla y verificar `Resolved` con solo «Reabrir»; reabrir y verificar `In Progress`
+- [x] **IT-01** — Escenario del ciclo completo: abrir el detalle de una incidencia en `Open`, verificar que solo se ofrece «Iniciar atención», aplicarla y verificar `In Progress`, el aviso de éxito y que solo se ofrece «Resolver»; aplicarla y verificar `Resolved` con solo «Reabrir»; reabrir y verificar `In Progress`
   En cada paso, comprobar que la petición `PATCH` lleva el cuerpo `{ status }` del destino y que no aparece diálogo de confirmación.
-- [ ] **IT-02** — Escenario de aplicación en curso: con la respuesta `PATCH` retenida, verificar el indicador «Aplicando…», la acción deshabilitada y el estado mostrado sin cambios hasta la respuesta
-- [ ] **IT-03** — Escenario de fallo de la API (`500`): verificar la alerta «No se pudo cambiar el estado» con un mensaje comprensible, el estado anterior conservado y la acción habilitada de nuevo
-- [ ] **IT-04** — Escenario de transición rechazada (`409`): verificar la alerta con el mensaje en español devuelto por la API y el estado anterior conservado; pulsar «Recargar incidencia» y verificar el estado vigente devuelto por `GET /incidents/{id}` con su acción válida
+- [x] **IT-02** — Escenario de aplicación en curso: con la respuesta `PATCH` retenida, verificar el indicador «Aplicando…», la acción deshabilitada y el estado mostrado sin cambios hasta la respuesta
+- [x] **IT-03** — Escenario de fallo de la API (`500`): verificar la alerta «No se pudo cambiar el estado» con un mensaje comprensible, el estado anterior conservado y la acción habilitada de nuevo
+- [x] **IT-04** — Escenario de transición rechazada (`409`): verificar la alerta con el mensaje en español devuelto por la API y el estado anterior conservado; pulsar «Recargar incidencia» y verificar el estado vigente devuelto por `GET /incidents/{id}` con su acción válida
