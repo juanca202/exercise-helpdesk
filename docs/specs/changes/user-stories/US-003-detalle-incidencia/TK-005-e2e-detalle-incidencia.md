@@ -32,8 +32,8 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Escenario de detalle con comentarios: abrir `/incidents/{id}` y verificar título, id, descripción, estado, categoría, prioridad, fecha de creación y los comentarios en orden ascendente con autor, fecha y contenido
-- [ ] **IT-02** — Escenario sin comentarios: verificar «Comentarios (0)» y el mensaje «Aún no hay comentarios en esta incidencia»
-- [ ] **IT-03** — Escenario de incidencia no encontrada (`404`, con un UUID inexistente y con un id inválido): verificar «Incidencia no encontrada» y que «Volver al listado» navega a `/incidents`
-- [ ] **IT-04** — Escenario de error de la API (`500`): verificar la alerta «No se pudo cargar la incidencia» y que «Reintentar» muestra el detalle cuando la siguiente respuesta es `200`
-- [ ] **IT-05** — Escenario de apertura directa por URL: cargar `/incidents/{id}` en una página nueva, sin navegar desde otra pantalla, y verificar que se consulta ese id y se muestra su detalle
+- [x] **IT-01** — Escenario de detalle con comentarios: abrir `/incidents/{id}` y verificar título, id, descripción, estado, categoría, prioridad, fecha de creación y los comentarios en orden ascendente con autor, fecha y contenido
+- [x] **IT-02** — Escenario sin comentarios: verificar «Comentarios (0)» y el mensaje «Aún no hay comentarios en esta incidencia»
+- [x] **IT-03** — Escenario de incidencia no encontrada (`404`, con un UUID inexistente y con un id inválido): verificar «Incidencia no encontrada» y que «Volver al listado» navega a `/incidents`
+- [x] **IT-04** — Escenario de error de la API (`500`): verificar la alerta «No se pudo cargar la incidencia» y que «Reintentar» muestra el detalle cuando la siguiente respuesta es `200`
+- [x] **IT-05** — Escenario de apertura directa por URL: cargar `/incidents/{id}` en una página nueva, sin navegar desde otra pantalla, y verificar que se consulta ese id y se muestra su detalle

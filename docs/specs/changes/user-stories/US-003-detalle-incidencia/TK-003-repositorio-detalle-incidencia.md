@@ -43,11 +43,11 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Definir el modelo `Comment` (`id`, `incidentId`, `content`, `author`, `createdAt`) y el modelo `IncidentDetail` como la incidencia más su lista de comentarios
-- [ ] **IT-02** — Implementar en el mapper la conversión pura de la respuesta de `GET /incidents/{id}` a `IncidentDetail`, conservando el orden de `comments` que entrega la API
-- [ ] **IT-03** — Añadir a `IncidentRepository` la consulta de detalle por id con `getResource()` sobre `getApiUrl('incidents/{id}')`, con el id codificado en la URL
-- [ ] **IT-04** — Exponer el resultado de forma que el consumidor distinga «no encontrada» (`404`) de un fallo recuperable (`500` o error de red) y pueda reintentar la última consulta
+- [x] **IT-01** — Definir el modelo `Comment` (`id`, `incidentId`, `content`, `author`, `createdAt`) y el modelo `IncidentDetail` como la incidencia más su lista de comentarios
+- [x] **IT-02** — Implementar en el mapper la conversión pura de la respuesta de `GET /incidents/{id}` a `IncidentDetail`, conservando el orden de `comments` que entrega la API
+- [x] **IT-03** — Añadir a `IncidentRepository` la consulta de detalle por id con `getResource()` sobre `getApiUrl('incidents/{id}')`, con el id codificado en la URL
+- [x] **IT-04** — Exponer el resultado de forma que el consumidor distinga «no encontrada» (`404`) de un fallo recuperable (`500` o error de red) y pueda reintentar la última consulta
   El `404` no dispara la notificación global de error: la página lo presenta como estado propio.
-- [ ] **IT-05** — Crear el Object Mother del detalle con variantes con comentarios (orden ascendente) y sin comentarios
-- [ ] **IT-06** — Añadir en `src/mocks/handlers.ts` el handler de `GET /incidents/:id` con `200` y comentarios por defecto; las variantes `200` sin comentarios, `404` con `{ statusCode, error, message }` y `500` se sobrescriben por prueba con `server.use(...)`
-- [ ] **IT-07** — Pruebas unitarias del mapper y del repositorio: detalle con comentarios en el orden recibido, detalle con `comments: []`, `404` reconocido como «no encontrada», `500` y error de red reconocidos como fallo recuperable, y reintento que vuelve a consultar
+- [x] **IT-05** — Crear el Object Mother del detalle con variantes con comentarios (orden ascendente) y sin comentarios
+- [x] **IT-06** — Añadir en `src/mocks/handlers.ts` el handler de `GET /incidents/:id` con `200` y comentarios por defecto; las variantes `200` sin comentarios, `404` con `{ statusCode, error, message }` y `500` se sobrescriben por prueba con `server.use(...)`
+- [x] **IT-07** — Pruebas unitarias del mapper y del repositorio: detalle con comentarios en el orden recibido, detalle con `comments: []`, `404` reconocido como «no encontrada», `500` y error de red reconocidos como fallo recuperable, y reintento que vuelve a consultar

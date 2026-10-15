@@ -40,13 +40,13 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Registrar en `incidents.routes.ts` la ruta `:id` (dirección `/incidents/:id`) con carga diferida del componente de detalle, sin interferir con `incidents/new`
-- [ ] **IT-02** — Leer el `id` de la ruta y consultar el detalle mediante `IncidentRepository`, volviendo a consultar si el `id` cambia
-- [ ] **IT-03** — Mostrar el estado de carga con bloques de marcador y el texto «Cargando incidencia…» mientras dura la consulta
-- [ ] **IT-04** — Mostrar el detalle según el wireframe: enlace «← Volver al listado» a `/incidents`, título e id completo, tarjeta «Descripción» que respeta saltos de línea, y panel «Datos de la incidencia» con estado (literal `Open` / `In Progress` / `Resolved`), categoría y prioridad con su etiqueta en español y fecha de creación con formato `dd/mm/aaaa hh:mm`
-- [ ] **IT-05** — Mostrar la tarjeta «Comentarios (n)» con cada comentario (avatar, autor, fecha y contenido) en el orden recibido, ascendente; con cero comentarios, «Comentarios (0)» y el mensaje «Aún no hay comentarios en esta incidencia»
-- [ ] **IT-06** — Reservar en la disposición el área «Acciones de estado» del panel lateral y el área del formulario de comentario debajo de la lista, sin implementar su contenido
-- [ ] **IT-07** — Ante un fallo recuperable (`500` o red), mostrar la alerta «No se pudo cargar la incidencia» con motivo comprensible y el botón «Reintentar», manteniendo visible «Volver al listado»; al reintentar, volver al estado de carga y consultar de nuevo
-- [ ] **IT-08** — Ante un `404` (id inexistente o inválido), mostrar «Incidencia no encontrada» con texto explicativo y el botón «Volver al listado» que navega a `/incidents`
-- [ ] **IT-09** — Adaptar la vista móvil a una sola columna: datos en cuadrícula de 2 × 2 con las acciones de estado debajo, descripción, comentarios y formulario
-- [ ] **IT-10** — Pruebas unitarias con Testing Library y MSW: carga, detalle con todos los campos y comentarios en orden, sin comentarios, error con reintento exitoso, no encontrada con navegación al listado, y accesibilidad (AXE) en los estados de detalle, error y no encontrada
+- [x] **IT-01** — Registrar en `incidents.routes.ts` la ruta `:id` (dirección `/incidents/:id`) con carga diferida del componente de detalle, sin interferir con `incidents/new`
+- [x] **IT-02** — Leer el `id` de la ruta y consultar el detalle mediante `IncidentRepository`, volviendo a consultar si el `id` cambia
+- [x] **IT-03** — Mostrar el estado de carga con bloques de marcador y el texto «Cargando incidencia…» mientras dura la consulta
+- [x] **IT-04** — Mostrar el detalle según el wireframe: enlace «← Volver al listado» a `/incidents`, título e id completo, tarjeta «Descripción» que respeta saltos de línea, y panel «Datos de la incidencia» con estado (literal `Open` / `In Progress` / `Resolved`), categoría y prioridad con su etiqueta en español y fecha de creación con formato `dd/mm/aaaa hh:mm`
+- [x] **IT-05** — Mostrar la tarjeta «Comentarios (n)» con cada comentario (avatar, autor, fecha y contenido) en el orden recibido, ascendente; con cero comentarios, «Comentarios (0)» y el mensaje «Aún no hay comentarios en esta incidencia»
+- [x] **IT-06** — Reservar en la disposición el área «Acciones de estado» del panel lateral y el área del formulario de comentario debajo de la lista, sin implementar su contenido
+- [x] **IT-07** — Ante un fallo recuperable (`500` o red), mostrar la alerta «No se pudo cargar la incidencia» con motivo comprensible y el botón «Reintentar», manteniendo visible «Volver al listado»; al reintentar, volver al estado de carga y consultar de nuevo
+- [x] **IT-08** — Ante un `404` (id inexistente o inválido), mostrar «Incidencia no encontrada» con texto explicativo y el botón «Volver al listado» que navega a `/incidents`
+- [x] **IT-09** — Adaptar la vista móvil a una sola columna: datos en cuadrícula de 2 × 2 con las acciones de estado debajo, descripción, comentarios y formulario
+- [x] **IT-10** — Pruebas unitarias con Testing Library y MSW: carga, detalle con todos los campos y comentarios en orden, sin comentarios, error con reintento exitoso, no encontrada con navegación al listado, y accesibilidad (AXE) en los estados de detalle, error y no encontrada
