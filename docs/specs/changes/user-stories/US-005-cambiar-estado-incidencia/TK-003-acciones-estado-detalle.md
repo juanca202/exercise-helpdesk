@@ -43,12 +43,12 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Definir la transición válida por estado según DG-001: `Open` → «Iniciar atención» / `In Progress`; `In Progress` → «Resolver» / `Resolved`; `Resolved` → «Reabrir» / `In Progress`
-- [ ] **IT-02** — Implementar el componente de la sección: recibe la incidencia (id y estado actual) y muestra solo el botón primario de la transición válida, con el estado destino indicado debajo; sin diálogo de confirmación
-- [ ] **IT-03** — Al pulsar, invocar `changeStatus` con `notifyError: false`; mientras se aplica, mostrar el indicador y el texto «Aplicando…», deshabilitar la acción y mantener el estado mostrado
-- [ ] **IT-04** — Al éxito, emitir la incidencia actualizada para que el detalle muestre el nuevo estado y su acción, conservando los comentarios ya cargados, y publicar con `notify` el aviso «Estado actualizado a {estado}» con `level: 'success'`
-- [ ] **IT-05** — Ante un error, mostrar la alerta «No se pudo cambiar el estado» con el mensaje del error de cambio de estado (el de la API tal cual si el motivo es `rejected`), conservar el estado anterior y volver a habilitar la acción
-- [ ] **IT-06** — Incluir en la alerta el enlace «Recargar incidencia», que vuelve a pedir el detalle, retira la alerta y muestra el estado vigente con su acción válida
-- [ ] **IT-07** — Integrar la sección en el panel «Datos de la incidencia» de la página de detalle; en móvil, botón a ancho completo bajo los datos
-- [ ] **IT-08** — Accesibilidad: acción con nombre accesible, estado ocupado (`aria-busy`) mientras se aplica y alerta anunciada (`role="alert"`)
-- [ ] **IT-09** — Pruebas unitarias con Testing Library y MSW: acción visible por cada estado y ausencia de las demás; aplicación sin confirmación con el cuerpo esperado; indicador y bloqueo durante la petición; nuevo estado y aviso de éxito; `409` con el mensaje de la API, estado conservado y recarga; `500` y error de red con mensaje comprensible y estado conservado; accesibilidad (AXE)
+- [x] **IT-01** — Definir la transición válida por estado según DG-001: `Open` → «Iniciar atención» / `In Progress`; `In Progress` → «Resolver» / `Resolved`; `Resolved` → «Reabrir» / `In Progress`
+- [x] **IT-02** — Implementar el componente de la sección: recibe la incidencia (id y estado actual) y muestra solo el botón primario de la transición válida, con el estado destino indicado debajo; sin diálogo de confirmación
+- [x] **IT-03** — Al pulsar, invocar `changeStatus` con `notifyError: false`; mientras se aplica, mostrar el indicador y el texto «Aplicando…», deshabilitar la acción y mantener el estado mostrado
+- [x] **IT-04** — Al éxito, emitir la incidencia actualizada para que el detalle muestre el nuevo estado y su acción, conservando los comentarios ya cargados, y publicar con `notify` el aviso «Estado actualizado a {estado}» con `level: 'success'`
+- [x] **IT-05** — Ante un error, mostrar la alerta «No se pudo cambiar el estado» con el mensaje del error de cambio de estado (el de la API tal cual si el motivo es `rejected`), conservar el estado anterior y volver a habilitar la acción
+- [x] **IT-06** — Incluir en la alerta el enlace «Recargar incidencia», que vuelve a pedir el detalle, retira la alerta y muestra el estado vigente con su acción válida
+- [x] **IT-07** — Integrar la sección en el panel «Datos de la incidencia» de la página de detalle; en móvil, botón a ancho completo bajo los datos
+- [x] **IT-08** — Accesibilidad: acción con nombre accesible, estado ocupado (`aria-busy`) mientras se aplica y alerta anunciada (`role="alert"`)
+- [x] **IT-09** — Pruebas unitarias con Testing Library y MSW: acción visible por cada estado y ausencia de las demás; aplicación sin confirmación con el cuerpo esperado; indicador y bloqueo durante la petición; nuevo estado y aviso de éxito; `409` con el mensaje de la API, estado conservado y recarga; `500` y error de red con mensaje comprensible y estado conservado; accesibilidad (AXE)

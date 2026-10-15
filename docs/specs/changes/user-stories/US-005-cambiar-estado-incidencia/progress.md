@@ -6,7 +6,7 @@
 **Estado:** In Progress
 **Tipo:** historia de usuario
 **Fecha de creación:** 2026-10-15 12:30
-**Ultima actualizacion:** 2026-10-15 12:55
+**Ultima actualizacion:** 2026-10-15 13:02
 
 ## Unidades
 
@@ -61,8 +61,29 @@
 
 ### TK-003: Acciones de estado en el detalle de incidencia
 
-<!-- unit:id=TK-003 · status=Pending -->
-**Estado:** Pending
+<!-- unit:id=TK-003 · status=Done -->
+**Estado:** Done
+**Iniciado:** 2026-10-15 12:56
+**Finalizado:** 2026-10-15 13:02
+**Implementador:** juanca202 / Claude / claude-sonnet-5-5
+
+**Archivos:**
+```
++ helpdesk-frontend/src/app/features/incidents/models/incident-status-transition.ts
++ helpdesk-frontend/src/app/features/incidents/components/incident-status-actions/incident-status-actions.ts
++ helpdesk-frontend/src/app/features/incidents/components/incident-status-actions/incident-status-actions.html
++ helpdesk-frontend/src/app/features/incidents/components/incident-status-actions/incident-status-actions.spec.ts
+~ helpdesk-frontend/src/app/features/incidents/pages/incident-detail/incident-detail.ts
+~ helpdesk-frontend/src/app/features/incidents/pages/incident-detail/incident-detail.html
+~ helpdesk-frontend/src/app/features/incidents/pages/incident-detail/incident-detail.spec.ts
+```
+
+**Notas:**
+- Specs del componente y de la página de detalle (66 pruebas de `components/` y `pages/`), eslint, tsc, prettier, `ng build` y `npm run arch` en verde.
+- IT-08/IT-09 (AXE): `axe-core` no está instalado en el repositorio, así que no se escribieron pruebas con AXE; el marcado usa `aria-busy`, `role="alert"` y nombres accesibles. Pendiente decidir si se añade la dependencia (mismo pendiente que US-006 TK-003).
+- No se creó `incident-status-actions.css`: los estilos van con Tailwind en la plantilla. El aviso de éxito se publica con `notify` desde el componente.
+- Se actualizó la prueba de la página que comprobaba el área reservada `status-actions-area`; ahora verifica el encabezado «Acciones de estado».
+- «Recargar incidencia» vuelve a pedir el detalle (`detail.reload()`) sin pasar por la pantalla de carga, para conservar la sección visible.
 
 ### TK-004: Pruebas E2E del cambio de estado de una incidencia
 
