@@ -45,17 +45,17 @@ helpdesk-backend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Definir en `incidents.schemas.ts` el cuerpo de cambio de estado con `z.strictObject` y una sola clave `status` (enum `Open` | `In Progress` | `Resolved`), con mensajes propios en español
+- [x] **IT-01** — Definir en `incidents.schemas.ts` el cuerpo de cambio de estado con `z.strictObject` y una sola clave `status` (enum `Open` | `In Progress` | `Resolved`), con mensajes propios en español
   Un cuerpo ausente o no JSON, un `status` ausente o fuera del enum y cualquier clave no declarada producen `400` con `issues` (`instancePath` `/status` para el campo).
-- [ ] **IT-02** — Declarar en `PATCH /:id/status` los parámetros (mismo `id` sin formato UUID que el detalle) y las respuestas `200` (incidencia sin comentarios), `400`, `404` y `409` (`statusCode`, `error`, `message`)
-- [ ] **IT-03** — Añadir al repositorio la actualización de `status` condicionada al estado vigente en una sola sentencia (`id` y estado origen en la condición), devolviendo el número de filas afectadas; sin importar tipos de Fastify
-- [ ] **IT-04** — Definir en el servicio la tabla de transiciones permitidas de DG-001: `Open → In Progress`, `In Progress → Resolved`, `Resolved → In Progress`
-- [ ] **IT-05** — Implementar el cambio de estado en el servicio: id no UUID v4 o incidencia inexistente → error `404` común; transición fuera de la tabla (incluido el mismo estado) → error `409`; transición permitida → actualización condicionada y `409` si afecta 0 filas; con 1 fila, devolver la incidencia actualizada
+- [x] **IT-02** — Declarar en `PATCH /:id/status` los parámetros (mismo `id` sin formato UUID que el detalle) y las respuestas `200` (incidencia sin comentarios), `400`, `404` y `409` (`statusCode`, `error`, `message`)
+- [x] **IT-03** — Añadir al repositorio la actualización de `status` condicionada al estado vigente en una sola sentencia (`id` y estado origen en la condición), devolviendo el número de filas afectadas; sin importar tipos de Fastify
+- [x] **IT-04** — Definir en el servicio la tabla de transiciones permitidas de DG-001: `Open → In Progress`, `In Progress → Resolved`, `Resolved → In Progress`
+- [x] **IT-05** — Implementar el cambio de estado en el servicio: id no UUID v4 o incidencia inexistente → error `404` común; transición fuera de la tabla (incluido el mismo estado) → error `409`; transición permitida → actualización condicionada y `409` si afecta 0 filas; con 1 fila, devolver la incidencia actualizada
   El error `409` es un error de dominio con `statusCode` 409 y mensaje en español que nombra el estado actual y el destino (p. ej. «No se puede cambiar el estado de Open a Resolved»); ningún camino de rechazo escribe en la base de datos.
-- [ ] **IT-06** — Registrar `PATCH /:id/status` en `incidents.routes.ts` y verificar que figura en el contrato OpenAPI con sus respuestas
-- [ ] **IT-07** — Asegurar en el manejador de errores común que una respuesta `409` lleve `error: "Conflict"` y conserve el `message` propio, con el mismo criterio aplicado al `404`
+- [x] **IT-06** — Registrar `PATCH /:id/status` en `incidents.routes.ts` y verificar que figura en el contrato OpenAPI con sus respuestas
+- [x] **IT-07** — Asegurar en el manejador de errores común que una respuesta `409` lleve `error: "Conflict"` y conserve el `message` propio, con el mismo criterio aplicado al `404`
   Sin alterar los `400` de validación ni los `500`.
-- [ ] **IT-08** — Pruebas del repositorio: la actualización condicionada afecta 1 fila cuando el estado vigente coincide y 0 filas, sin cambios, cuando no coincide
-- [ ] **IT-09** — Pruebas con `inject` de las transiciones válidas: `Open → In Progress`, `In Progress → Resolved` y `Resolved → In Progress` responden `200` con la incidencia actualizada sin `comments`, y el nuevo estado se lee después en `GET /incidents/{id}` y en `GET /incidents`
-- [ ] **IT-10** — Pruebas con `inject` de los rechazos: `Open → Resolved`, `Resolved → Open` y el mismo estado responden `409` con `error: "Conflict"` y mensaje en español con estado actual y destino; `status` ausente, inválido o con claves extra responde `400` con `issues` en español; UUID inexistente e id no UUID v4 responden `404`; en todos los casos el estado persistido no cambia
-- [ ] **IT-11** — Prueba de la actualización concurrente: si el estado vigente cambia entre la lectura y la escritura, la operación responde `409` y no modifica la incidencia
+- [x] **IT-08** — Pruebas del repositorio: la actualización condicionada afecta 1 fila cuando el estado vigente coincide y 0 filas, sin cambios, cuando no coincide
+- [x] **IT-09** — Pruebas con `inject` de las transiciones válidas: `Open → In Progress`, `In Progress → Resolved` y `Resolved → In Progress` responden `200` con la incidencia actualizada sin `comments`, y el nuevo estado se lee después en `GET /incidents/{id}` y en `GET /incidents`
+- [x] **IT-10** — Pruebas con `inject` de los rechazos: `Open → Resolved`, `Resolved → Open` y el mismo estado responden `409` con `error: "Conflict"` y mensaje en español con estado actual y destino; `status` ausente, inválido o con claves extra responde `400` con `issues` en español; UUID inexistente e id no UUID v4 responden `404`; en todos los casos el estado persistido no cambia
+- [x] **IT-11** — Prueba de la actualización concurrente: si el estado vigente cambia entre la lectura y la escritura, la operación responde `409` y no modifica la incidencia
