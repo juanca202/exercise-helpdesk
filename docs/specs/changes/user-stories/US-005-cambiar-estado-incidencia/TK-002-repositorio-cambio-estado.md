@@ -40,11 +40,11 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Exponer en el modelo el tipo `IncidentStatus` (`Open` | `In Progress` | `Resolved`, literales del contrato) si aún no es un tipo propio, y el tipo de error de cambio de estado con su motivo (`rejected` para `409`, `not-found`, `invalid`, `unexpected`) y el mensaje a mostrar
-- [ ] **IT-02** — Añadir al mapper las funciones puras que construyen el cuerpo `{ status }` y convierten la respuesta `200` en `Incident`
-- [ ] **IT-03** — Añadir al mapper la función pura que convierte un fallo de la mutación en el error de cambio de estado leyendo la respuesta HTTP original de `ResourceException`
+- [x] **IT-01** — Exponer en el modelo el tipo `IncidentStatus` (`Open` | `In Progress` | `Resolved`, literales del contrato) si aún no es un tipo propio, y el tipo de error de cambio de estado con su motivo (`rejected` para `409`, `not-found`, `invalid`, `unexpected`) y el mensaje a mostrar
+- [x] **IT-02** — Añadir al mapper las funciones puras que construyen el cuerpo `{ status }` y convierten la respuesta `200` en `Incident`
+- [x] **IT-03** — Añadir al mapper la función pura que convierte un fallo de la mutación en el error de cambio de estado leyendo la respuesta HTTP original de `ResourceException`
   `409` → motivo `rejected` con el `message` de la API tal cual; `404` → `not-found`; `400` → `invalid`; `500`, error de red u otro → `unexpected`; los mensajes no provenientes de la API se redactan en español y comprensibles (p. ej. «No se pudo cambiar el estado. Inténtalo de nuevo.»).
-- [ ] **IT-04** — Añadir a `IncidentRepository` la mutación `changeStatus({ id, status })` mediante `getMutations()`, con `PATCH` a `getApiUrl('incidents/{id}/status')` y resultado `Incident`
-- [ ] **IT-05** — Añadir los handlers MSW de `PATCH /incidents/:id/status`: por defecto `200` con la incidencia y el `status` recibido; variantes `400` (`issues` en `/status`), `404` (`error: "Not Found"`), `409` (`error: "Conflict"` con mensaje en español) y `500` para sobrescribir en pruebas
-- [ ] **IT-06** — Pruebas unitarias del mapper: cuerpo, respuesta y conversión de cada código de error al motivo y mensaje esperados
-- [ ] **IT-07** — Pruebas unitarias del repositorio con MSW: `changeStatus` envía el cuerpo esperado y devuelve la incidencia actualizada; con `409` el error se convierte en `rejected` con el mensaje de la API; con `400`, `404`, `500` y error de red, en el motivo correspondiente
+- [x] **IT-04** — Añadir a `IncidentRepository` la mutación `changeStatus({ id, status })` mediante `getMutations()`, con `PATCH` a `getApiUrl('incidents/{id}/status')` y resultado `Incident`
+- [x] **IT-05** — Añadir los handlers MSW de `PATCH /incidents/:id/status`: por defecto `200` con la incidencia y el `status` recibido; variantes `400` (`issues` en `/status`), `404` (`error: "Not Found"`), `409` (`error: "Conflict"` con mensaje en español) y `500` para sobrescribir en pruebas
+- [x] **IT-06** — Pruebas unitarias del mapper: cuerpo, respuesta y conversión de cada código de error al motivo y mensaje esperados
+- [x] **IT-07** — Pruebas unitarias del repositorio con MSW: `changeStatus` envía el cuerpo esperado y devuelve la incidencia actualizada; con `409` el error se convierte en `rejected` con el mensaje de la API; con `400`, `404`, `500` y error de red, en el motivo correspondiente

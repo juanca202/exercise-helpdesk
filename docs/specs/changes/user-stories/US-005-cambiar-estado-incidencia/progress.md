@@ -6,7 +6,7 @@
 **Estado:** In Progress
 **Tipo:** historia de usuario
 **Fecha de creación:** 2026-10-15 12:30
-**Ultima actualizacion:** 2026-10-15 12:47
+**Ultima actualizacion:** 2026-10-15 12:55
 
 ## Unidades
 
@@ -38,8 +38,26 @@
 
 ### TK-002: Mutación de cambio de estado en el repositorio de incidencias
 
-<!-- unit:id=TK-002 · status=Pending -->
-**Estado:** Pending
+<!-- unit:id=TK-002 · status=Done -->
+**Estado:** Done
+**Iniciado:** 2026-10-15 12:49
+**Finalizado:** 2026-10-15 12:55
+**Implementador:** juanca202 / Claude / claude-sonnet-5-5
+
+**Archivos:**
+```
+~ helpdesk-frontend/src/app/features/incidents/models/incident.ts
+~ helpdesk-frontend/src/app/features/incidents/utils/incident-mapper.ts
+~ helpdesk-frontend/src/app/features/incidents/utils/incident-mapper.spec.ts
+~ helpdesk-frontend/src/app/features/incidents/repositories/incident-repository.ts
+~ helpdesk-frontend/src/app/features/incidents/repositories/incident-repository.spec.ts
+~ helpdesk-frontend/src/mocks/handlers.ts
+```
+
+**Notas:**
+- Specs del mapper y del repositorio (59 pruebas), eslint, tsc, prettier y `npm run arch` en verde.
+- El mapper vive en `utils/incident-mapper.ts` (no en `mappers/` como indica el árbol del TK). `IncidentStatus` ya existía en el modelo; se añadieron `IncidentStatusChange`, `IncidentStatusChangeFailure` e `IncidentStatusChangeError`.
+- La respuesta `200` se convierte con `mapResponseToIncident` existente; el nuevo mapper aporta `mapStatusToRequest` y `mapErrorToStatusChangeError`. Los handlers `400`/`404`/`409`/`500` no se exportan: las pruebas los sobrescriben con `server.use(...)`.
 
 ### TK-003: Acciones de estado en el detalle de incidencia
 
