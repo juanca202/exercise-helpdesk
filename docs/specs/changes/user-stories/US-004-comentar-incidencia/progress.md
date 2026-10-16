@@ -2,11 +2,11 @@
 
 ## US-004-comentar-incidencia
 
-<!-- work:id=US-004 · status=In Progress -->
-**Estado:** In Progress
+<!-- work:id=US-004 · status=Done -->
+**Estado:** Done
 **Tipo:** historia de usuario
 **Fecha de creación:** 2026-10-15 20:36
-**Ultima actualizacion:** 2026-10-15 20:48
+**Ultima actualizacion:** 2026-10-15 20:50
 
 ## Unidades
 
@@ -28,7 +28,7 @@
 ```
 
 **Notas:**
-- Pruebas de los archivos afectados (comments, openapi, get, status), lint, typecheck y prettier en verde. Código en el worktree `helpdesk-backend/.worktrees/US-004-comentar-incidencia` (rama `feature/US-004-comentar-incidencia`), pendiente de commit.
+- Pruebas de los archivos afectados (comments, openapi, get, status), lint, typecheck y prettier en verde. Código en el worktree `helpdesk-backend/.worktrees/US-004-comentar-incidencia` (rama `feature/US-004-comentar-incidencia`).
 - La US no tiene `test-cases/`: las pruebas se derivaron de los AC-001 a AC-005 y AC-007.
 
 ### TK-002: Repositorio y mapper de comentarios en el cliente
@@ -50,7 +50,7 @@
 ```
 
 **Notas:**
-- Pruebas de los archivos afectados (comment-mapper e incident-repository), eslint y tsc (app y spec) en verde. Código en el worktree `helpdesk-frontend/.worktrees/US-004-comentar-incidencia` (rama `feature/US-004-comentar-incidencia`), pendiente de commit.
+- Pruebas de los archivos afectados (comment-mapper e incident-repository), eslint y tsc (app y spec) en verde. Código en el worktree `helpdesk-frontend/.worktrees/US-004-comentar-incidencia` (rama `feature/US-004-comentar-incidencia`).
 - El worktree reutiliza `node_modules` del repo principal mediante enlace simbólico y requirió `node scripts/git-version.js` para generar `git-version.json`.
 
 **Decisiones adicionales:**
@@ -76,7 +76,7 @@
 ```
 
 **Notas:**
-- Pruebas de los archivos afectados (comment-form e incident-detail, 25), eslint y tsc (app y spec) en verde. Código en el worktree `helpdesk-frontend/.worktrees/US-004-comentar-incidencia`, pendiente de commit.
+- Pruebas de los archivos afectados (comment-form e incident-detail, 25), eslint y tsc (app y spec) en verde. Código en el worktree `helpdesk-frontend/.worktrees/US-004-comentar-incidencia`.
 - IT-09: el proyecto no tiene ninguna librería AXE instalada (ni `axe-core` ni `vitest-axe`), así que la accesibilidad se verificó con aserciones sobre etiqueta, `aria-describedby`, `aria-invalid`, `role="alert"` y `aria-busy`; no se añadió dependencia.
 - El `comment-form.spec.ts` y el componente se escribieron en la misma iteración, por lo que no se observó el rojo de ese archivo; las pruebas de la pantalla de detalle sí se vieron fallar antes de integrar.
 - El estilo del formulario va con Tailwind en la plantilla (igual que `incident-form`), por lo que no se creó `comment-form.css` como preveía la lista de archivos del TK.
@@ -86,7 +86,17 @@
 
 ### TK-004: Pruebas E2E de comentarios en el detalle de incidencia
 
-<!-- unit:id=TK-004 · status=In Progress -->
-**Estado:** In Progress
+<!-- unit:id=TK-004 · status=Done -->
+**Estado:** Done
 **Iniciado:** 2026-10-15 20:48
+**Finalizado:** 2026-10-15 20:49
 **Implementador:** juanca202 / Claude / claude-sonnet-5-5
+
+**Archivos:**
+```
++ helpdesk-frontend/e2e/incident-comments.spec.ts
+```
+
+**Notas:**
+- Cuatro escenarios Playwright con `page.route` (alta válida, validación sin petición, `400` de la API y `500` con reintento). Ejecutados una vez en el cierre sobre el código consolidado: 4 de 4 en verde (Chromium; el servidor de desarrollo se levantó en el puerto 4411 porque 4200 y 4300 estaban ocupados por otros procesos).
+- Código en el worktree `helpdesk-frontend/.worktrees/US-004-comentar-incidencia`.

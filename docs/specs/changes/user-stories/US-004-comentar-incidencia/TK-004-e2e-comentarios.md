@@ -33,9 +33,9 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Preparar la simulación con `page.route`: `GET /incidents/{id}` con una incidencia y un comentario previo, y `POST /incidents/{id}/comments` configurable por escenario
-- [ ] **IT-02** — Escenario de alta válida: escribir el comentario, enviar y verificar que aparece al final de la lista con autor «Agente demo» y fecha, que el contador de la tarjeta aumenta y que el campo queda vacío, sin recargar la página
+- [x] **IT-01** — Preparar la simulación con `page.route`: `GET /incidents/{id}` con una incidencia y un comentario previo, y `POST /incidents/{id}/comments` configurable por escenario
+- [x] **IT-02** — Escenario de alta válida: escribir el comentario, enviar y verificar que aparece al final de la lista con autor «Agente demo» y fecha, que el contador de la tarjeta aumenta y que el campo queda vacío, sin recargar la página
   Verificar además que el cuerpo enviado contiene solo `content`.
-- [ ] **IT-03** — Escenario de validación: enviar vacío (y solo con espacios) y con más de 500 caracteres, verificar el error junto al campo y que no se realiza ninguna petición `POST`
-- [ ] **IT-04** — Escenario de error de validación de la API (`400` con `issues` en `/content`): verificar el error en el campo y el texto conservado
-- [ ] **IT-05** — Escenario de fallo de la API (`500`): verificar el aviso «No se pudo agregar el comentario», el texto conservado y el formulario habilitado para reintentar
+- [x] **IT-03** — Escenario de validación: enviar vacío (y solo con espacios) y con más de 500 caracteres, verificar el error junto al campo y que no se realiza ninguna petición `POST`
+- [x] **IT-04** — Escenario de error de validación de la API (`400` con `issues` en `/content`): verificar el error en el campo y el texto conservado
+- [x] **IT-05** — Escenario de fallo de la API (`500`): verificar el aviso «No se pudo agregar el comentario», el texto conservado y el formulario habilitado para reintentar
