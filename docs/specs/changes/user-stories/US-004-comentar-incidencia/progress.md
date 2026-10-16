@@ -6,7 +6,7 @@
 **Estado:** In Progress
 **Tipo:** historia de usuario
 **Fecha de creación:** 2026-10-15 20:36
-**Ultima actualizacion:** 2026-10-15 20:39
+**Ultima actualizacion:** 2026-10-15 20:48
 
 ## Unidades
 
@@ -59,10 +59,34 @@
 
 ### TK-003: Formulario de comentario en el detalle de incidencia
 
-<!-- unit:id=TK-003 · status=Pending -->
-**Estado:** Pending
+<!-- unit:id=TK-003 · status=Done -->
+**Estado:** Done
+**Iniciado:** 2026-10-15 20:47
+**Finalizado:** 2026-10-15 20:48
+**Implementador:** juanca202 / Claude / claude-sonnet-5-5
+
+**Archivos:**
+```
++ helpdesk-frontend/src/app/features/incidents/components/comment-form/comment-form.ts
++ helpdesk-frontend/src/app/features/incidents/components/comment-form/comment-form.html
++ helpdesk-frontend/src/app/features/incidents/components/comment-form/comment-form.spec.ts
+~ helpdesk-frontend/src/app/features/incidents/pages/incident-detail/incident-detail.ts
+~ helpdesk-frontend/src/app/features/incidents/pages/incident-detail/incident-detail.html
+~ helpdesk-frontend/src/app/features/incidents/pages/incident-detail/incident-detail.spec.ts
+```
+
+**Notas:**
+- Pruebas de los archivos afectados (comment-form e incident-detail, 25), eslint y tsc (app y spec) en verde. Código en el worktree `helpdesk-frontend/.worktrees/US-004-comentar-incidencia`, pendiente de commit.
+- IT-09: el proyecto no tiene ninguna librería AXE instalada (ni `axe-core` ni `vitest-axe`), así que la accesibilidad se verificó con aserciones sobre etiqueta, `aria-describedby`, `aria-invalid`, `role="alert"` y `aria-busy`; no se añadió dependencia.
+- El `comment-form.spec.ts` y el componente se escribieron en la misma iteración, por lo que no se observó el rojo de ese archivo; las pruebas de la pantalla de detalle sí se vieron fallar antes de integrar.
+- El estilo del formulario va con Tailwind en la plantilla (igual que `incident-form`), por lo que no se creó `comment-form.css` como preveía la lista de archivos del TK.
+
+**Decisiones adicionales:**
+- El destacado «Recién agregado» se retira solo a los 5 s (`RECENT_HIGHLIGHT_MS`) o al agregar otro comentario.
 
 ### TK-004: Pruebas E2E de comentarios en el detalle de incidencia
 
-<!-- unit:id=TK-004 · status=Pending -->
-**Estado:** Pending
+<!-- unit:id=TK-004 · status=In Progress -->
+**Estado:** In Progress
+**Iniciado:** 2026-10-15 20:48
+**Implementador:** juanca202 / Claude / claude-sonnet-5-5

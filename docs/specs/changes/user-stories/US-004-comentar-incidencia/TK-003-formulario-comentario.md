@@ -43,14 +43,14 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Crear el componente `comment-form` con Signal Forms: campo «Nuevo comentario» obligatorio y multilínea, ayuda «Entre 1 y 500 caracteres» y botón primario «Agregar comentario»; recibe el id de la incidencia
-- [ ] **IT-02** — Aplicar la validación de presentación con las reglas de `content` de MD-002 (recorte, 1–500; solo espacios cuenta como vacío) y mostrar el contador `n / 500` sobre el contenido recortado
-- [ ] **IT-03** — Al pulsar «Agregar comentario» con contenido inválido, mostrar el error junto al campo y no enviar la petición
+- [x] **IT-01** — Crear el componente `comment-form` con Signal Forms: campo «Nuevo comentario» obligatorio y multilínea, ayuda «Entre 1 y 500 caracteres» y botón primario «Agregar comentario»; recibe el id de la incidencia
+- [x] **IT-02** — Aplicar la validación de presentación con las reglas de `content` de MD-002 (recorte, 1–500; solo espacios cuenta como vacío) y mostrar el contador `n / 500` sobre el contenido recortado
+- [x] **IT-03** — Al pulsar «Agregar comentario» con contenido inválido, mostrar el error junto al campo y no enviar la petición
   Mensajes: «El comentario no puede estar vacío» y «El comentario no puede superar los 500 caracteres». El botón no se deshabilita por errores, solo durante el envío.
-- [ ] **IT-04** — Enviar con `addComment`: el botón muestra el indicador y «Agregando…», y campo y botón quedan bloqueados mientras dura la petición para evitar envíos duplicados
-- [ ] **IT-05** — Ante `201`, emitir el comentario devuelto, vaciar el campo y reiniciar la validación; la pantalla de detalle lo añade al final de la lista, lo destaca brevemente como «Recién agregado» y aumenta el contador de la tarjeta, sin volver a pedir el detalle
-- [ ] **IT-06** — Ante `400`, mostrar en el campo el `issue` con `instancePath` `/content` y desbloquear el formulario conservando el texto
-- [ ] **IT-07** — Ante `404`, `500` o fallo de red, mostrar junto al botón el aviso «No se pudo agregar el comentario» (con el motivo de la API en el `404`), conservar el texto y rehabilitar el formulario para reintentar
-- [ ] **IT-08** — Ajustar la disposición responsiva: en móvil el formulario ocupa el ancho completo al final del detalle, con el botón a ancho completo
-- [ ] **IT-09** — Pruebas unitarias del formulario: contador, errores de vacío, solo espacios y 501 caracteres sin petición, bloqueo e indicador durante el envío, éxito con campo vacío, `400` en el campo, `404`/`500` con texto conservado y accesibilidad (AXE)
-- [ ] **IT-10** — Pruebas unitarias de la pantalla de detalle: el comentario creado aparece al final de la lista con autor y fecha, sin recargar, y el contador de la tarjeta aumenta
+- [x] **IT-04** — Enviar con `addComment`: el botón muestra el indicador y «Agregando…», y campo y botón quedan bloqueados mientras dura la petición para evitar envíos duplicados
+- [x] **IT-05** — Ante `201`, emitir el comentario devuelto, vaciar el campo y reiniciar la validación; la pantalla de detalle lo añade al final de la lista, lo destaca brevemente como «Recién agregado» y aumenta el contador de la tarjeta, sin volver a pedir el detalle
+- [x] **IT-06** — Ante `400`, mostrar en el campo el `issue` con `instancePath` `/content` y desbloquear el formulario conservando el texto
+- [x] **IT-07** — Ante `404`, `500` o fallo de red, mostrar junto al botón el aviso «No se pudo agregar el comentario» (con el motivo de la API en el `404`), conservar el texto y rehabilitar el formulario para reintentar
+- [x] **IT-08** — Ajustar la disposición responsiva: en móvil el formulario ocupa el ancho completo al final del detalle, con el botón a ancho completo
+- [x] **IT-09** — Pruebas unitarias del formulario: contador, errores de vacío, solo espacios y 501 caracteres sin petición, bloqueo e indicador durante el envío, éxito con campo vacío, `400` en el campo, `404`/`500` con texto conservado y accesibilidad (AXE)
+- [x] **IT-10** — Pruebas unitarias de la pantalla de detalle: el comentario creado aparece al final de la lista con autor y fecha, sin recargar, y el contador de la tarjeta aumenta
