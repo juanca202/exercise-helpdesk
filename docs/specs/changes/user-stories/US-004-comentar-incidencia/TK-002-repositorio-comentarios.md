@@ -41,12 +41,12 @@ helpdesk-frontend/
 
 ## Plan de implementación
 
-- [ ] **IT-01** — Añadir al modelo de comentario el tipo `NewComment` con el único campo `content`, alineado con el contrato
-- [ ] **IT-02** — Implementar `CommentMapper` en `utils/comment-mapper.ts` con funciones puras entre los datos del formulario y el cuerpo de `POST /incidents/{id}/comments`
+- [x] **IT-01** — Añadir al modelo de comentario el tipo `NewComment` con el único campo `content`, alineado con el contrato
+- [x] **IT-02** — Implementar `CommentMapper` en `utils/comment-mapper.ts` con funciones puras entre los datos del formulario y el cuerpo de `POST /incidents/{id}/comments`
   El cuerpo resultante contiene solo `content`, recortado; nunca `id`, `incidentId`, `author` ni `createdAt`. Sin validación ni formateo de UI en el mapper.
-- [ ] **IT-03** — Añadir la mutación `addComment` a `IncidentRepository` mediante `getMutations()`, con parámetros id de incidencia y cuerpo, URL `getApiUrl('incidents/{id}/comments')` y resultado `Comment`
+- [x] **IT-03** — Añadir la mutación `addComment` a `IncidentRepository` mediante `getMutations()`, con parámetros id de incidencia y cuerpo, URL `getApiUrl('incidents/{id}/comments')` y resultado `Comment`
   Los errores HTTP se propagan sin transformar para que el formulario distinga `400` (con `issues`), `404` y `500`/red.
-- [ ] **IT-04** — Añadir en `src/mocks/handlers.ts` los handlers de `POST /incidents/:id/comments`: `201` con el comentario (`author` «Agente demo»), `400` con `{statusCode, error, message, issues[]}` e `instancePath` `/content`, `404` con `{statusCode, error: "Not Found", message}` y `500` genérico
-- [ ] **IT-05** — Pruebas unitarias del mapper: cuerpo solo con `content` recortado y sin mutar la entrada
-- [ ] **IT-06** — Pruebas unitarias de `addComment` con MSW: `201` devuelve el comentario, `400` expone los `issues`, `404` y `500` quedan como error, y el estado de envío se activa durante la petición
+- [x] **IT-04** — Añadir en `src/mocks/handlers.ts` los handlers de `POST /incidents/:id/comments`: `201` con el comentario (`author` «Agente demo»), `400` con `{statusCode, error, message, issues[]}` e `instancePath` `/content`, `404` con `{statusCode, error: "Not Found", message}` y `500` genérico
+- [x] **IT-05** — Pruebas unitarias del mapper: cuerpo solo con `content` recortado y sin mutar la entrada
+- [x] **IT-06** — Pruebas unitarias de `addComment` con MSW: `201` devuelve el comentario, `400` expone los `issues`, `404` y `500` quedan como error, y el estado de envío se activa durante la petición
   Datos de prueba construidos con el Object Mother de comentarios de [TK-003 de US-003](../US-003-detalle-incidencia/TK-003-repositorio-detalle-incidencia.md) (`testing/incident-detail.mother.ts`).
