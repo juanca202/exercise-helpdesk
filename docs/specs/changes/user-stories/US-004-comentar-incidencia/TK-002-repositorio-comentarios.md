@@ -1,9 +1,11 @@
+---
+id: TK-002
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-002: Repositorio y mapper de comentarios en el cliente
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-004](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

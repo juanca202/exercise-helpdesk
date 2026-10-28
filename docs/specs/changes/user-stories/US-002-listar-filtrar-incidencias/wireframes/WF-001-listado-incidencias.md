@@ -1,10 +1,13 @@
+---
+id: WF-001
+type: wireframe
+status: Approved
+solution_type: web
+responsive: true
+origin: ../README.md
+related: [AC-001, AC-002, AC-003, AC-004, AC-005, AC-007, AC-008, AC-009, AC-010]
+---
 # WF-001: Listado de incidencias
-
-<!-- wireframe:status=Approved -->
-**Estado:** Approved
-**Tipo de solución:** Aplicación web (Angular) — responsiva
-**Origen:** [US-002: Consultar y filtrar incidencias](../README.md)
-**Requisitos relacionados:** AC-001, AC-002, AC-003, AC-004, AC-005, AC-007, AC-008, AC-009, AC-010
 
 Permite al agente (o al empleado) consultar las incidencias registradas en una tabla con id, título, categoría, prioridad, estado y fecha de creación, y abrir el detalle de cada una (AC-001, AC-002). Puede filtrar por estado, prioridad y categoría, ver y limpiar los filtros aplicados, invertir el orden por fecha y paginar de 20 en 20 (AC-003 a AC-005, AC-007). Distingue «no hay incidencias» de «ninguna coincide con los filtros» y muestra carga y error con reintentar (AC-008, AC-009).
 

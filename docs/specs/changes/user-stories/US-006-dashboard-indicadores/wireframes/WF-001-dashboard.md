@@ -1,10 +1,13 @@
+---
+id: WF-001
+type: wireframe
+status: Approved
+solution_type: web
+responsive: true
+origin: ../README.md
+related: [AC-001, AC-002, AC-003, AC-004, AC-005, AC-006, AC-007, AC-008, AC-009]
+---
 # WF-001: Dashboard
-
-<!-- wireframe:status=Approved -->
-**Estado:** Approved
-**Tipo de solución:** Aplicación web (Angular) — responsiva
-**Origen:** [US-006: Consultar el dashboard de indicadores](../README.md)
-**Requisitos relacionados:** AC-001, AC-002, AC-003, AC-004, AC-005, AC-006, AC-007, AC-008, AC-009
 
 Página principal de la aplicación (AC-006): el responsable de soporte ve, al abrirla, el total de incidencias y cuántas hay abiertas, en atención y resueltas, calculadas en ese momento (AC-001 a AC-004), sin gráficos ni comparaciones (AC-007). Desde ella accede al listado y al registro de una incidencia nueva (AC-006). Muestra carga, error con reintentar (AC-008) y un estado sin incidencias con los cuatro indicadores en cero y un mensaje explicativo (AC-005).
 

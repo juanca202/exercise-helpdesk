@@ -1,13 +1,15 @@
+---
+id: US-001
+type: user-story
+status: Ready
+created: 2026-10-12
+updated: 2026-10-12
+repositories: [helpdesk-backend, helpdesk-frontend]
+invest: { met: 5, partial: 1, not_met: 0, total: 6 }
+dor: { met: 6, partial: 0, not_met: 0, total: 6 }
+requirement: ../../requirements/PRD-001-helpdesk-lite/README.md
+---
 # US-001: Registrar una incidencia
-
-<!-- us:status=Ready -->
-**Estado:** Ready
-**Fecha de creación:** 2026-10-12
-**Última actualización:** 2026-10-12
-**Repositorios:** helpdesk-backend, helpdesk-frontend
-**INVEST:** 🟢 5 · 🟡 1 / 6
-**DoR:** 🟢 6 / 6
-**Requerimiento:** [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md)
 
 ## Descripción
 
@@ -17,7 +19,7 @@
 
 ## Contexto
 
-Origen: US-01 / RF-01 del PRD, registrado como [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md) (RF-01). La aplicación es de demostración: no hay autenticación real, el actor se representa con un usuario predefinido. Comprende el formulario de registro (frontend) y el endpoint de creación con su persistencia (backend), acordados mediante el contrato OpenAPI compartido.
+Origen: US-01 / RF-01 del PRD, registrado como [PRD-001: HelpDesk Lite](../../requirements/PRD-001-helpdesk-lite/README.md) (RF-01). La aplicación es de demostración: no hay autenticación real, el actor se representa con un usuario predefinido. Comprende el formulario de registro (frontend) y el endpoint de creación con su persistencia (backend), acordados mediante el contrato OpenAPI compartido.
 
 ## Fuera de alcance
 
@@ -55,7 +57,7 @@ Origen: US-01 / RF-01 del PRD, registrado como [RQ-001: HelpDesk Lite](../../req
 - **Modelo:** [MD-001: Incidencia](../../../../architecture/incidencias/models/MD-001-incidencia.md)
 - **API:** [API-001: Incidencias — POST /incidents](../../../../architecture/incidencias/apis/API-001-incidencias.md#post-incidents) · [GET /incidents/{id}](../../../../architecture/incidencias/apis/API-001-incidencias.md#get-incidents-id)
 - **Flujo:** [FL-001: Registro de una incidencia](../../../../architecture/incidencias/flows/FL-001-registro-incidencia.md)
-- **Requerimiento:** [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md) — RF-01, RNF-02, RNF-06.
+- **Requerimiento:** [PRD-001: HelpDesk Lite](../../requirements/PRD-001-helpdesk-lite/README.md) — RF-01, RNF-06.
 - **Contrato:** [ADR-008: contrato OpenAPI como fuente compartida](../../../../../helpdesk-backend/docs/adr/ADR-008-contrato-openapi-fuente-compartida.md).
 
 ## Observaciones
@@ -63,34 +65,3 @@ Origen: US-01 / RF-01 del PRD, registrado como [RQ-001: HelpDesk Lite](../../req
 - AC-003 (persistencia y recuperación por id) no tiene interfaz en esta historia: se verifica por API.
 - Se resuelven al planificar las tareas técnicas (no condicionan el comportamiento): nombres de tabla y columnas, representación de `createdAt` en SQLite y librería de acceso a datos.
 - El estilo de `status` (`Open|In Progress|Resolved`) se normaliza, si hace falta, antes de RF-05 (US de ciclo de vida).
-
----
-
-## Validación
-
-### Complejidad sugerida
-
-- **Story points:** 5
-- **Justificación:** Alcance acotado (un formulario y un endpoint con persistencia), pero involucra dos repositorios, el contrato compartido y la primera configuración de persistencia SQLite (ADR-007).
-
-### INVEST
-
-| Letra | Criterio      | Resultado | Notas |
-| ----- | ------------- | --------- | ----- |
-| **I** | Independiente | Met       | Es la primera historia; las demás (RF-02..RF-06) dependen de ella, no al revés. |
-| **N** | Negociable    | Met       | Los valores de catálogo y límites son ajustables sin cambiar la intención. |
-| **V** | Valiosa       | Met       | Habilita que el equipo de soporte reciba solicitudes. |
-| **E** | Estimable     | Met       | Alcance y contrato claros; stack ya definido. |
-| **S** | Pequeña       | Partial   | Abarca dos repositorios y la puesta en marcha de la persistencia; cabe en una sesión del taller. |
-| **T** | Testeable     | Met       | Cada criterio es verificable por pruebas de API, de componente y e2e. |
-
-### Definition of Ready (DoR)
-
-| Criterio DoR                       | Estado  | Notas |
-| ---------------------------------- | ------- | ----- |
-| Dependencias listas                | Met     | Stack y persistencia decididos (ADR-007, ADR-008). |
-| Inputs/outputs claros              | Met     | Entradas y salidas definidas en los criterios. |
-| Repositorios definidos             | Met     | helpdesk-backend, helpdesk-frontend. |
-| Sin decisiones técnicas pendientes | Met     | Id, prioridad, errores y ruta confirmados; la librería de datos se decide al planificar. |
-| Referencias de UI                  | Met     | WF-001 aprobado. |
-| Sin aclaraciones pendientes        | Met     | Nada pendiente con usuario/producto. |

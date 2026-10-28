@@ -1,9 +1,11 @@
+---
+id: TK-003
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-003: Repositorio y modelo del detalle de incidencia en el cliente
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-003](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

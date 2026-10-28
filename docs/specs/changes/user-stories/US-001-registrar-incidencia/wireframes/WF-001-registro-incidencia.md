@@ -1,10 +1,13 @@
+---
+id: WF-001
+type: wireframe
+status: Approved
+solution_type: web
+responsive: true
+origin: ../README.md
+related: [AC-001, AC-002, AC-004, AC-005, AC-006, AC-007, AC-008, AC-009, AC-010]
+---
 # WF-001: Registro de incidencia
-
-<!-- wireframe:status=Approved -->
-**Estado:** Approved
-**Tipo de solución:** Aplicación web (Angular) — responsiva
-**Origen:** [US-001: Registrar una incidencia](../README.md)
-**Requisitos relacionados:** AC-001, AC-002, AC-004, AC-005, AC-006, AC-007, AC-008, AC-009, AC-010
 
 Permite al empleado solicitante registrar una solicitud de soporte indicando título, descripción, categoría y prioridad (AC-001). Al enviarla ve un indicador de carga y, si tiene éxito, una confirmación con el identificador asignado (AC-002, AC-009); si hay datos inválidos ve el error junto a cada campo (AC-004 a AC-008, AC-010), y si el registro falla, un mensaje de error general (AC-009).
 

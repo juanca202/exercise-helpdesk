@@ -1,9 +1,11 @@
+---
+id: TK-003
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-003: Página de dashboard y menú de navegación
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-006](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

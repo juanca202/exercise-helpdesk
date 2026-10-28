@@ -1,9 +1,11 @@
+---
+id: TK-006
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-006: Pruebas E2E del registro de incidencia
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-001](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

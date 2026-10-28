@@ -1,9 +1,11 @@
+---
+id: TK-001
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-backend
+---
 # TK-001: Endpoint de indicadores de incidencias
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-006](./README.md)
-**Repositorio:** helpdesk-backend
 
 ## Descripción
 

@@ -1,9 +1,11 @@
+---
+id: TK-004
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-004: Pruebas E2E del cambio de estado de una incidencia
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-005](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

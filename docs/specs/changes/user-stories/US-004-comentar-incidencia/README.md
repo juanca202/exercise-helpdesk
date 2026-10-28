@@ -1,13 +1,15 @@
+---
+id: US-004
+type: user-story
+status: Ready
+created: 2026-10-12
+updated: 2026-10-12
+repositories: [helpdesk-backend, helpdesk-frontend]
+invest: { met: 5, partial: 1, not_met: 0, total: 6 }
+dor: { met: 6, partial: 0, not_met: 0, total: 6 }
+requirement: ../../requirements/PRD-001-helpdesk-lite/README.md
+---
 # US-004: Agregar comentarios a una incidencia
-
-<!-- us:status=Ready -->
-**Estado:** Ready
-**Fecha de creación:** 2026-10-12
-**Última actualización:** 2026-10-12
-**Repositorios:** helpdesk-backend, helpdesk-frontend
-**INVEST:** 🟢 5 · 🟡 1 / 6
-**DoR:** 🟢 6 / 6
-**Requerimiento:** [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md)
 
 ## Descripción
 
@@ -17,7 +19,7 @@
 
 ## Contexto
 
-Origen: RF-04 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md). Los comentarios se agregan y se leen desde la pantalla de detalle de [US-003](../US-003-detalle-incidencia/README.md). La aplicación es de demostración: no hay autenticación real, por lo que el autor es un usuario de demostración predefinido que asigna el sistema. No hay edición ni eliminación de comentarios en esta versión.
+Origen: RF-04 y RNF-06 de [PRD-001: HelpDesk Lite](../../requirements/PRD-001-helpdesk-lite/README.md). Los comentarios se agregan y se leen desde la pantalla de detalle de [US-003](../US-003-detalle-incidencia/README.md). La aplicación es de demostración: no hay autenticación real, por lo que el autor es un usuario de demostración predefinido que asigna el sistema. No hay edición ni eliminación de comentarios en esta versión.
 
 ## Fuera de alcance
 
@@ -48,7 +50,7 @@ Origen: RF-04 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-help
 
 - **Diseño / prototipo:** Ninguno aportado por el usuario.
 - **Wireframe:** [WF-001: Formulario de comentario](wireframes/WF-001-formulario-comentario.md) — Approved.
-- **Requerimiento:** [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md) — RF-04, RNF-06.
+- **Requerimiento:** [PRD-001: HelpDesk Lite](../../requirements/PRD-001-helpdesk-lite/README.md) — RF-04, RNF-06.
 - **Modelo:** [MD-002: Comentario](../../../../architecture/incidencias/models/MD-002-comentario.md) · [MD-001: Incidencia](../../../../architecture/incidencias/models/MD-001-incidencia.md)
 - **API:** [API-001: Incidencias — POST /incidents/{id}/comments](../../../../architecture/incidencias/apis/API-001-incidencias.md#post-incidents-id-comments)
 - **Flujo:** [FL-004: Registro de un comentario](../../../../architecture/incidencias/flows/FL-004-registro-comentario.md)
@@ -58,34 +60,3 @@ Origen: RF-04 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-help
 
 - Depende de [US-003](../US-003-detalle-incidencia/README.md) (pantalla y respuesta de detalle donde se muestran los comentarios) y, por extensión, de [US-001](../US-001-registrar-incidencia/README.md).
 - Modelo, contrato y wireframe generados con `/design-define`; el autor visible es «Agente demo». La cabecera muestra «Empleado demo»: en pantalla aparecen dos usuarios de demostración distintos, aceptado al aprobar el wireframe.
-
----
-
-## Validación
-
-### Complejidad sugerida
-
-- **Story points:** 3
-- **Justificación:** Un endpoint de escritura con nueva entidad persistida y un formulario sencillo embebido en una pantalla existente.
-
-### INVEST
-
-| Letra | Criterio      | Resultado | Notas |
-| ----- | ------------- | --------- | ----- |
-| **I** | Independiente | Partial   | Depende de la pantalla y la respuesta de detalle de US-003. |
-| **N** | Negociable    | Met       | Límite de longitud y disposición ajustables. |
-| **V** | Valiosa       | Met       | Habilita el seguimiento de la atención. |
-| **E** | Estimable     | Met       | Alcance acotado. |
-| **S** | Pequeña       | Met       | Un endpoint y un formulario. |
-| **T** | Testeable     | Met       | Verificable por pruebas de API, de componente y e2e. |
-
-### Definition of Ready (DoR)
-
-| Criterio DoR                       | Estado  | Notas |
-| ---------------------------------- | ------- | ----- |
-| Dependencias listas                | Met     | US-003 especificada; implementar después de ella. |
-| Inputs/outputs claros              | Met     | Entradas y salidas definidas en los criterios. |
-| Repositorios definidos             | Met     | helpdesk-backend, helpdesk-frontend. |
-| Sin decisiones técnicas pendientes | Met     | Autor fijo y longitud 1–500 confirmados; contrato en API-001. |
-| Referencias de UI                  | Met     | Wireframe aprobado. |
-| Sin aclaraciones pendientes        | Met     | Nada pendiente con usuario/producto. |

@@ -1,9 +1,11 @@
+---
+id: TK-001
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-backend
+---
 # TK-001: Persistencia SQLite de comentarios
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-003](./README.md)
-**Repositorio:** helpdesk-backend
 
 ## Descripción
 

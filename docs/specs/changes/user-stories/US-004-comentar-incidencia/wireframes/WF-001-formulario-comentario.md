@@ -1,10 +1,13 @@
+---
+id: WF-001
+type: wireframe
+status: Approved
+solution_type: web
+responsive: true
+origin: ../README.md
+related: [AC-001, AC-002, AC-003, AC-004, AC-006, AC-008, AC-009, AC-010]
+---
 # WF-001: Formulario de comentario
-
-<!-- wireframe:status=Approved -->
-**Estado:** Approved
-**Tipo de solución:** Aplicación web (Angular) — responsiva
-**Origen:** [US-004: Agregar comentarios a una incidencia](../README.md)
-**Requisitos relacionados:** AC-001, AC-002, AC-003, AC-004, AC-006, AC-008, AC-009, AC-010
 
 Dentro del detalle de la incidencia, el agente escribe un comentario de seguimiento y lo agrega (AC-001); ve un contador `n / 500` y el error junto al campo si el contenido es inválido, sin enviar (AC-003, AC-008). Al enviar ve un indicador de carga con el formulario bloqueado; si falla, un error comprensible conservando el texto (AC-009); si tiene éxito, el comentario aparece al final de la lista, con autor «Agente demo» y fecha, y el campo queda vacío (AC-002, AC-006, AC-008).
 

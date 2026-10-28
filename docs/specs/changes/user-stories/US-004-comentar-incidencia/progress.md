@@ -1,12 +1,14 @@
+---
+type: progress
+work: US-004
+status: Done
+kind: user-story
+created: "2026-10-15 20:36"
+updated: "2026-10-15 20:50"
+---
 # Progreso
 
 ## US-004-comentar-incidencia
-
-<!-- work:id=US-004 · status=Done -->
-**Estado:** Done
-**Tipo:** historia de usuario
-**Fecha de creación:** 2026-10-15 20:36
-**Ultima actualizacion:** 2026-10-15 20:50
 
 ## Unidades
 

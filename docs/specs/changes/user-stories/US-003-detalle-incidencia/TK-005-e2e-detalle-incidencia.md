@@ -1,9 +1,11 @@
+---
+id: TK-005
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-005: Pruebas E2E del detalle de incidencia
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-003](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

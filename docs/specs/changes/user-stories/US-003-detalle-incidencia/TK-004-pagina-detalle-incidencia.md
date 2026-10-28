@@ -1,9 +1,11 @@
+---
+id: TK-004
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-004: Página de detalle de incidencia
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-003](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

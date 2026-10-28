@@ -1,9 +1,11 @@
+---
+id: TK-002
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-backend
+---
 # TK-002: Endpoint de detalle de incidencia con comentarios
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-003](./README.md)
-**Repositorio:** helpdesk-backend
 
 ## Descripción
 

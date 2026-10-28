@@ -1,12 +1,14 @@
+---
+type: progress
+work: US-003
+status: Done
+kind: user-story
+created: "2026-10-13 16:00"
+updated: "2026-10-14 03:50"
+---
 # Progreso
 
 ## US-003-detalle-incidencia
-
-<!-- work:id=US-003 · status=Done -->
-**Estado:** Done
-**Tipo:** historia de usuario
-**Fecha de creación:** 2026-10-13 16:00
-**Ultima actualizacion:** 2026-10-14 03:50
 
 ## Unidades
 

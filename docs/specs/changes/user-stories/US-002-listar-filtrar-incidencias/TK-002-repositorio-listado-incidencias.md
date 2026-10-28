@@ -1,9 +1,11 @@
+---
+id: TK-002
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-002: Repositorio del listado de incidencias en el cliente
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-002](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

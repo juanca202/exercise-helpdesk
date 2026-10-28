@@ -1,12 +1,14 @@
+---
+type: progress
+work: US-005
+status: Done
+kind: user-story
+created: "2026-10-15 12:30"
+updated: "2026-10-15 14:10"
+---
 # Progreso
 
 ## US-005-cambiar-estado-incidencia
-
-<!-- work:id=US-005 · status=Done -->
-**Estado:** Done
-**Tipo:** historia de usuario
-**Fecha de creación:** 2026-10-15 12:30
-**Ultima actualizacion:** 2026-10-15 14:10
 
 ## Unidades
 

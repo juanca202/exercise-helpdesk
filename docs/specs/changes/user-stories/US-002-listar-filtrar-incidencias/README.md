@@ -1,13 +1,15 @@
+---
+id: US-002
+type: user-story
+status: Ready
+created: 2026-10-12
+updated: 2026-10-12
+repositories: [helpdesk-backend, helpdesk-frontend]
+invest: { met: 5, partial: 1, not_met: 0, total: 6 }
+dor: { met: 6, partial: 0, not_met: 0, total: 6 }
+requirement: ../../requirements/PRD-001-helpdesk-lite/README.md
+---
 # US-002: Consultar y filtrar incidencias
-
-<!-- us:status=Ready -->
-**Estado:** Ready
-**Fecha de creación:** 2026-10-12
-**Última actualización:** 2026-10-12
-**Repositorios:** helpdesk-backend, helpdesk-frontend
-**INVEST:** 🟢 5 · 🟡 1 / 6
-**DoR:** 🟢 6 / 6
-**Requerimiento:** [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md)
 
 ## Descripción
 
@@ -17,7 +19,7 @@
 
 ## Contexto
 
-Origen: RF-02 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md). Parte de las incidencias que registra [US-001](../US-001-registrar-incidencia/README.md). La aplicación es de demostración: no hay autenticación real y todos los actores ven el mismo listado. Las etiquetas visibles de categoría y prioridad son las de [WF-001](../US-001-registrar-incidencia/wireframes/WF-001-registro-incidencia.md); el estado se muestra con sus valores literales `Open`, `In Progress` y `Resolved`.
+Origen: RF-02 y RNF-06 de [PRD-001: HelpDesk Lite](../../requirements/PRD-001-helpdesk-lite/README.md). Parte de las incidencias que registra [US-001](../US-001-registrar-incidencia/README.md). La aplicación es de demostración: no hay autenticación real y todos los actores ven el mismo listado. Las etiquetas visibles de categoría y prioridad son las de [WF-001](../US-001-registrar-incidencia/wireframes/WF-001-registro-incidencia.md); el estado se muestra con sus valores literales `Open`, `In Progress` y `Resolved`.
 
 ## Fuera de alcance
 
@@ -49,7 +51,7 @@ Origen: RF-02 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-help
 
 - **Diseño / prototipo:** Ninguno aportado por el usuario.
 - **Wireframe:** [WF-001: Listado de incidencias](wireframes/WF-001-listado-incidencias.md) — Approved.
-- **Requerimiento:** [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md) — RF-02, RNF-06.
+- **Requerimiento:** [PRD-001: HelpDesk Lite](../../requirements/PRD-001-helpdesk-lite/README.md) — RF-02, RNF-06.
 - **Modelo:** [MD-001: Incidencia](../../../../architecture/incidencias/models/MD-001-incidencia.md)
 - **API:** [API-001: Incidencias — GET /incidents](../../../../architecture/incidencias/apis/API-001-incidencias.md#get-incidents)
 - **Flujo:** [FL-002: Consulta del listado de incidencias](../../../../architecture/incidencias/flows/FL-002-consulta-listado-incidencias.md)
@@ -59,34 +61,3 @@ Origen: RF-02 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-help
 
 - Depende de [US-001](../US-001-registrar-incidencia/README.md) (las incidencias que se listan). Navegar al detalle (AC-002) se completa con [US-003](../US-003-detalle-incidencia/README.md).
 - Wireframe aprobado y documentación técnica generados con `/design-define`. Parámetros de query no declarados: se ignoran (decidir en la planificación si se rechazan con 400).
-
----
-
-## Validación
-
-### Complejidad sugerida
-
-- **Story points:** 5
-- **Justificación:** Dos repositorios, tres filtros combinables, orden y paginación en contrato y UI, con estados vacío, de carga y de error.
-
-### INVEST
-
-| Letra | Criterio      | Resultado | Notas |
-| ----- | ------------- | --------- | ----- |
-| **I** | Independiente | Met       | Solo requiere los datos de US-001. |
-| **N** | Negociable    | Met       | Tamaño de página y controles de UI ajustables sin cambiar la intención. |
-| **V** | Valiosa       | Met       | Permite localizar incidencias relevantes. |
-| **E** | Estimable     | Met       | Alcance y contrato claros. |
-| **S** | Pequeña       | Partial   | Filtros, orden y paginación en dos repositorios; cabe en una sesión del taller. |
-| **T** | Testeable     | Met       | Cada criterio es verificable por pruebas de API, de componente y e2e. |
-
-### Definition of Ready (DoR)
-
-| Criterio DoR                       | Estado  | Notas |
-| ---------------------------------- | ------- | ----- |
-| Dependencias listas                | Met     | US-001 especificada; stack y persistencia decididos. |
-| Inputs/outputs claros              | Met     | Entradas y salidas definidas en los criterios. |
-| Repositorios definidos             | Met     | helpdesk-backend, helpdesk-frontend. |
-| Sin decisiones técnicas pendientes | Met     | Tamaño de página y orden por defecto confirmados; contrato en API-001. |
-| Referencias de UI                  | Met     | Wireframe aprobado. |
-| Sin aclaraciones pendientes        | Met     | Nada pendiente con usuario/producto. |

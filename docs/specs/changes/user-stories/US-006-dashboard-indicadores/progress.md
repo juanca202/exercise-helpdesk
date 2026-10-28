@@ -1,12 +1,14 @@
+---
+type: progress
+work: US-006
+status: Done
+kind: user-story
+created: "2026-10-13 16:05"
+updated: "2026-10-13 16:32"
+---
 # Progreso
 
 ## US-006-dashboard-indicadores
-
-<!-- work:id=US-006 · status=Done -->
-**Estado:** Done
-**Tipo:** historia de usuario
-**Fecha de creación:** 2026-10-13 16:05
-**Ultima actualizacion:** 2026-10-13 16:32
 
 ## Unidades
 

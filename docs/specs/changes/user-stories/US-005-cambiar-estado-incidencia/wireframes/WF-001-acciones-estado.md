@@ -1,10 +1,13 @@
+---
+id: WF-001
+type: wireframe
+status: Approved
+solution_type: web
+responsive: true
+origin: ../README.md
+related: [AC-001, AC-002, AC-003, AC-005, AC-006, AC-007, AC-008, AC-009]
+---
 # WF-001: Acciones de estado
-
-<!-- wireframe:status=Approved -->
-**Estado:** Approved
-**Tipo de solución:** Aplicación web (Angular) — responsiva
-**Origen:** [US-005: Cambiar el estado de una incidencia](../README.md)
-**Requisitos relacionados:** AC-001, AC-002, AC-003, AC-005, AC-006, AC-007, AC-008, AC-009
 
 En el panel lateral del detalle, el agente ve solo la acción válida desde el estado actual — `Open` → «Iniciar atención», `In Progress` → «Resolver», `Resolved` → «Reabrir» — y la aplica sin confirmación (AC-001, AC-002, AC-007). Mientras se aplica, la acción muestra carga y queda bloqueada; al terminar, el detalle muestra el nuevo estado (AC-005, AC-006); si falla o la transición es rechazada, aparece un error comprensible y se conserva el estado anterior (AC-003, AC-008, AC-009).
 

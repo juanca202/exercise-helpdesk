@@ -1,9 +1,11 @@
+---
+id: TK-003
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-003: Acciones de estado en el detalle de incidencia
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-005](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

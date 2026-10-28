@@ -1,9 +1,11 @@
+---
+id: TK-004
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-004: Pruebas E2E del dashboard
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-006](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

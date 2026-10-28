@@ -1,10 +1,13 @@
+---
+id: WF-001
+type: wireframe
+status: Approved
+solution_type: web
+responsive: true
+origin: ../README.md
+related: [AC-001, AC-002, AC-003, AC-005, AC-006, AC-007, AC-008]
+---
 # WF-001: Detalle de incidencia
-
-<!-- wireframe:status=Approved -->
-**Estado:** Approved
-**Tipo de solución:** Aplicación web (Angular) — responsiva
-**Origen:** [US-003: Consultar el detalle de una incidencia](../README.md)
-**Requisitos relacionados:** AC-001, AC-002, AC-003, AC-005, AC-006, AC-007, AC-008
 
 Muestra una incidencia en su propia dirección, abierta desde el listado o por su id (AC-001, AC-005): título, id, descripción, estado, categoría, prioridad, fecha de creación y sus comentarios del más antiguo al más reciente (AC-002, AC-003). Incluye carga, error con reintentar, «aún no hay comentarios» (AC-007) y «incidencia no encontrada» con vuelta al listado (AC-006). Las áreas punteadas reservan el formulario de comentario (US-004) y las acciones de estado (US-005).
 

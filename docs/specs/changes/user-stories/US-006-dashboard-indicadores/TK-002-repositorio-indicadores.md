@@ -1,9 +1,11 @@
+---
+id: TK-002
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-frontend
+---
 # TK-002: Lectura de indicadores en el repositorio de incidencias
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-006](./README.md)
-**Repositorio:** helpdesk-frontend
 
 ## Descripción
 

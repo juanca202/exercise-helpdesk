@@ -1,13 +1,15 @@
+---
+id: US-005
+type: user-story
+status: Ready
+created: 2026-10-12
+updated: 2026-10-12
+repositories: [helpdesk-backend, helpdesk-frontend]
+invest: { met: 5, partial: 1, not_met: 0, total: 6 }
+dor: { met: 6, partial: 0, not_met: 0, total: 6 }
+requirement: ../../requirements/PRD-001-helpdesk-lite/README.md
+---
 # US-005: Cambiar el estado de una incidencia
-
-<!-- us:status=Ready -->
-**Estado:** Ready
-**Fecha de creación:** 2026-10-12
-**Última actualización:** 2026-10-12
-**Repositorios:** helpdesk-backend, helpdesk-frontend
-**INVEST:** 🟢 5 · 🟡 1 / 6
-**DoR:** 🟢 6 / 6
-**Requerimiento:** [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md)
 
 ## Descripción
 
@@ -17,7 +19,7 @@
 
 ## Contexto
 
-Origen: RF-05 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md). La acción se ejecuta desde la pantalla de detalle de [US-003](../US-003-detalle-incidencia/README.md) y el nuevo estado se refleja también en el listado de [US-002](../US-002-listar-filtrar-incidencias/README.md). Los valores de estado se mantienen literales: `Open`, `In Progress` y `Resolved`. La aplicación es de demostración: no hay roles ni permisos, cualquier actor puede ejecutar las transiciones.
+Origen: RF-05 y RNF-06 de [PRD-001: HelpDesk Lite](../../requirements/PRD-001-helpdesk-lite/README.md). La acción se ejecuta desde la pantalla de detalle de [US-003](../US-003-detalle-incidencia/README.md) y el nuevo estado se refleja también en el listado de [US-002](../US-002-listar-filtrar-incidencias/README.md). Los valores de estado se mantienen literales: `Open`, `In Progress` y `Resolved`. La aplicación es de demostración: no hay roles ni permisos, cualquier actor puede ejecutar las transiciones.
 
 ## Fuera de alcance
 
@@ -47,7 +49,7 @@ Origen: RF-05 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-help
 
 - **Diseño / prototipo:** Ninguno aportado por el usuario.
 - **Wireframe:** [WF-001: Acciones de estado](wireframes/WF-001-acciones-estado.md) — Approved.
-- **Requerimiento:** [RQ-001: HelpDesk Lite](../../requirements/RQ-001-helpdesk-lite/README.md) — RF-05, RNF-06.
+- **Requerimiento:** [PRD-001: HelpDesk Lite](../../requirements/PRD-001-helpdesk-lite/README.md) — RF-05, RNF-06.
 - **Modelo:** [MD-001: Incidencia](../../../../architecture/incidencias/models/MD-001-incidencia.md)
 - **API:** [API-001: Incidencias — PATCH /incidents/{id}/status](../../../../architecture/incidencias/apis/API-001-incidencias.md#patch-incidents-id-status)
 - **Flujo:** [FL-005: Cambio de estado de una incidencia](../../../../architecture/incidencias/flows/FL-005-cambio-estado-incidencia.md)
@@ -59,34 +61,3 @@ Origen: RF-05 y RNF-06 de [RQ-001: HelpDesk Lite](../../requirements/RQ-001-help
 - Depende de [US-003](../US-003-detalle-incidencia/README.md) (pantalla de detalle donde se ofrecen las acciones); el reflejo en el listado requiere [US-002](../US-002-listar-filtrar-incidencias/README.md).
 - La decisión de mantener los valores literales de `status` cierra el pendiente de normalización de la capability [incidencias](../../../../architecture/incidencias/README.md).
 - Contrato, diagrama de estados (DG-001) y wireframe generados con `/design-define`. La transición no permitida responde `409` (decisión técnica documentada en API-001).
-
----
-
-## Validación
-
-### Complejidad sugerida
-
-- **Story points:** 3
-- **Justificación:** Un endpoint con una máquina de estados pequeña y acciones condicionales en la pantalla de detalle.
-
-### INVEST
-
-| Letra | Criterio      | Resultado | Notas |
-| ----- | ------------- | --------- | ----- |
-| **I** | Independiente | Partial   | Depende de la pantalla de detalle de US-003. |
-| **N** | Negociable    | Met       | Etiquetas y disposición de las acciones ajustables. |
-| **V** | Valiosa       | Met       | Refleja el avance de la atención. |
-| **E** | Estimable     | Met       | Transiciones cerradas y alcance acotado. |
-| **S** | Pequeña       | Met       | Un endpoint y unas acciones en una pantalla existente. |
-| **T** | Testeable     | Met       | Verificable por pruebas de API, de componente y e2e. |
-
-### Definition of Ready (DoR)
-
-| Criterio DoR                       | Estado  | Notas |
-| ---------------------------------- | ------- | ----- |
-| Dependencias listas                | Met     | US-003 especificada; implementar después de ella. |
-| Inputs/outputs claros              | Met     | Transiciones y errores definidos en los criterios. |
-| Repositorios definidos             | Met     | helpdesk-backend, helpdesk-frontend. |
-| Sin decisiones técnicas pendientes | Met     | Valores de `status` literales y sin confirmación (confirmado); contrato en API-001. |
-| Referencias de UI                  | Met     | Wireframe aprobado. |
-| Sin aclaraciones pendientes        | Met     | Nada pendiente con usuario/producto. |

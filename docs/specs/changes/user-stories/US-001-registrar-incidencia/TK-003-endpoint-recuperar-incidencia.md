@@ -1,9 +1,11 @@
+---
+id: TK-003
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-backend
+---
 # TK-003: Endpoint de recuperación de incidencia por id
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-001](./README.md)
-**Repositorio:** helpdesk-backend
 
 ## Descripción
 

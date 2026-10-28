@@ -1,12 +1,14 @@
+---
+type: progress
+work: US-001
+status: Done
+kind: user-story
+created: "2026-10-13 09:52"
+updated: "2026-10-13 15:25"
+---
 # Progreso
 
 ## US-001-registrar-incidencia
-
-<!-- work:id=US-001 · status=Done -->
-**Estado:** Done
-**Tipo:** historia de usuario
-**Fecha de creación:** 2026-10-13 09:52
-**Ultima actualizacion:** 2026-10-13 15:25
 
 ## Unidades
 

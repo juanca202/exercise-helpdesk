@@ -1,9 +1,11 @@
+---
+id: TK-002
+type: task
+status: Ready
+story: ./README.md
+repository: helpdesk-backend
+---
 # TK-002: Endpoint de creación de incidencias
-
-<!-- tk:status=Ready -->
-**Estado:** Ready
-**Historia:** [US-001](./README.md)
-**Repositorio:** helpdesk-backend
 
 ## Descripción
 

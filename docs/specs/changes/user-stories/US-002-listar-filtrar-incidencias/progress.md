@@ -1,12 +1,14 @@
+---
+type: progress
+work: US-002
+status: Done
+kind: user-story
+created: "2026-10-13 16:10"
+updated: "2026-10-13 18:50"
+---
 # Progreso
 
 ## US-002-listar-filtrar-incidencias
-
-<!-- work:id=US-002 · status=Done -->
-**Estado:** Done
-**Tipo:** historia de usuario
-**Fecha de creación:** 2026-10-13 16:10
-**Ultima actualizacion:** 2026-10-13 18:50
 
 ## Unidades
 
