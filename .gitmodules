@@ -1,6 +1,6 @@
 [submodule "helpdesk-backend"]
 	path = helpdesk-backend
-	url = ./helpdesk-backend
+	url = https://github.com/juanca202/helpdesk-backend.git
 [submodule "helpdesk-frontend"]
 	path = helpdesk-frontend
-	url = ./helpdesk-frontend
+	url = https://github.com/juanca202/helpdesk-frontend.git
